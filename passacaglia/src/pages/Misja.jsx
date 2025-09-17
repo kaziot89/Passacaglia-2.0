@@ -3,6 +3,7 @@ import Logo_web from "../components/Logo_web";
 import Menu_Web from "../components/Menu_web";
 import Banner_podstrona from "../components/Banner_podstrona";
 import misjaImg from "../Pictures/banner1.jpg";
+import Footer from "../components/Footer_web";
 import "../Css/Misja.css"; // osobny plik CSS dla tej strony
 import "../Css/Button.css"; // osobny plik CSS dla tej strony
 
@@ -122,6 +123,7 @@ const Misja = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
