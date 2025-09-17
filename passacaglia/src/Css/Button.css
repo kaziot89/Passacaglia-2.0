@@ -1,0 +1,18 @@
+.oval_button {
+  color: #bc7f79;
+  border: 2px solid #bc7f79;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  /* margin: 48px auto 0; */
+  transition: color 0.1s ease, border-color 0.1s ease;
+  background: transparent;
+}
+
+.more-button:hover {
+  color: rgba(188, 127, 121, 0.7);
+  border-color: rgba(188, 127, 121, 0.7);
+}

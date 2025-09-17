@@ -1,0 +1,29 @@
+#menuContainer {
+  width: 1440px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 24px;
+  gap: 24px;
+}
+#wesprzyjButton {
+  background-color: #bc7f79;
+  color: white;
+  width: 123px;
+  height: 40px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  transition: background-color 0.2s, color 0.2s, border 0.2s; /* animacja 0.2s */
+}
+
+#wesprzyjButton:hover {
+  background-color: rgba(188, 127, 121, 0.8); /* półprzezroczyste tło */
+  cursor: pointer;
+}

@@ -1,0 +1,54 @@
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+#misja_page {
+  /* max-width: 685px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 64px;
+}
+#misja_page h1 {
+  margin: 64px 0;
+  font-family: "Merriweather", serif;
+  color: #4a727b;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+#misja_page h2 {
+  margin: 64px 0;
+  font-family: "Merriweather", serif;
+  color: #4a727b;
+  letter-spacing: 2px;
+  font-size: 26px;
+}
+#misja_page h3 {
+  margin: 32px 0 16px;
+  font-family: Merriweather Sans;
+  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 25px;
+}
+#cele_container p {
+  font-size: 14px;
+  font-family: Merriweather Sans;
+  line-height: 28px;
+  font-weight: 100;
+}
+#misja_container {
+  max-width: 685px;
+}
+#cele_paragraph {
+  font-family: Merriweather Sans;
+  font-size: 16px;
+  line-height: 28px;
+}
+.button_container {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  margin-top: 32px;
+  padding-bottom: 40px;
+}

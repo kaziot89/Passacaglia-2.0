@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap");
+
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #4a727b;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.footer-logo {
+  width: 123px;
+  height: 131.18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 10px;
+}
+
+.address-frame {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.divider {
+  width: 52px;
+  height: 1px;
+  background-color: white;
+  rotate: 90deg;
+  align-self: center;
+}
+
+.footer-address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.footer-address h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 5%;
+}
+
+.footer-address p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 5%;
+  text-align: center;
+}
+
+.footer-support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.support-button {
+  background-color: #bc7f79;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.support-button:hover {
+  background-color: #a46a65;
+  transform: scale(1.05);
+}
+
+.social-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon {
+  font-size: 22px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #bc7f79;
+}
