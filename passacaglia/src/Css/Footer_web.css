@@ -69,6 +69,10 @@
   text-align: center;
 }
 
+.footer-address a {
+  color: white;
+}
+
 .footer-support {
   display: flex;
   flex-direction: column;
@@ -76,7 +80,7 @@
   gap: 12px;
 }
 
-.support-button {
+/* .support-button {
   background-color: #bc7f79;
   color: white;
   font-weight: bold;
@@ -90,14 +94,47 @@
 .support-button:hover {
   background-color: #a46a65;
   transform: scale(1.05);
+} */
+
+.support-button {
+  background-color: #bc7f79;
+  color: white;
+  width: 123px;
+  height: 40px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #bc7f79;
+  transition: background-color 0.2s, color 0.2s, border 0.2s; /* animacja 0.2s */
+}
+
+.support-button:hover {
+  background-color: rgba(248, 140, 130, 0.8); /* półprzezroczyste tło */
+  cursor: pointer;
 }
 
 .social-buttons {
   display: flex;
-  gap: 16px;
+  gap: 0.5rem;
 }
 
 .social-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #4a727b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+/* .social-icon {
   font-size: 22px;
   color: white;
   transition: color 0.3s ease;
@@ -105,4 +142,4 @@
 
 .social-icon:hover {
   color: #bc7f79;
-}
+} */

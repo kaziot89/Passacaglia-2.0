@@ -52,7 +52,7 @@ const Misja = () => {
               Organizacja koncertów muzyki dawnej na instrumentach historycznych
               to rdzeń działalności fundacji. Współpracujemy z ośrodkami
               kultury, muzeami, instytucjami i organizacjami pozarządowymi przy
-              produkcji koncertów o jak najwyższym poziomie artystycznym. 
+              produkcji koncertów o jak najwyższym poziomie artystycznym.
               Działania te służą zwiększaniu świadomości kulturowej, wspierają
               rozwój wrażliwości muzycznej, sprzyjają również integracji
               społecznej oraz budowaniu lokalnej wspólnoty. Naszym flagowym
@@ -77,7 +77,7 @@ const Misja = () => {
               eksploracji. Z chęcią podejmujemy działania, które łączą różne
               dziedziny artystyczne. W ten sposób Fundacja nie tylko przyczynia
               się do ochrony i upowszechniania muzyki dawnej, ale również
-              inspiruje nowe formy twórczości artystycznej oraz  rozwija dialog
+              inspiruje nowe formy twórczości artystycznej oraz rozwija dialog
               między epokami, stylami i lokalnymi środowiskami.
             </p>
             <h3>Prace badawcze i edytorskie</h3>
@@ -104,7 +104,7 @@ const Misja = () => {
             <p>
               Podejmujemy działania związane z profesjonalną produkcją
               materiałów audio i wideo, dokumentujących naszą działalność
-              artystyczną.  Nagrania te pełnią nie tylko funkcję archiwalną, ale
+              artystyczną. Nagrania te pełnią nie tylko funkcję archiwalną, ale
               także edukacyjną, promocyjną i popularyzatorską – umożliwiając
               utrwalenie twórczości artystów oraz wydarzeń organizowanych przez
               Fundację.
