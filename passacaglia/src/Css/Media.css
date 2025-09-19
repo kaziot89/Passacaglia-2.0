@@ -1,0 +1,55 @@
+#media_page {
+  /* max-width: 685px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 64px;
+}
+#media_page h1 {
+  margin: 64px 0;
+  font-family: "Merriweather", serif;
+  color: #4a727b;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+#media_container {
+  width: 1041px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.media_item {
+  width: 331px;
+  height: 293px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.media_photo {
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 8px 24px -4px rgba(0, 0, 0, 0.2);
+}
+
+.media_text {
+  flex: 1;
+  padding: 10px;
+}
+.media_text h5 {
+  font-size: 12px;
+  font-family: Merriweather Sans;
+  color: rgb(179 179 179);
+  font-weight: 100;
+  /* margin: 12px 0; */
+  line-height: 27px;
+}
+.media_text p {
+  font-size: 16px;
+  font-family: Merriweather Sans;
+  line-height: 25px;
+}

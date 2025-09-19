@@ -23,6 +23,37 @@
   transition: background-color 0.2s, color 0.2s, border 0.2s; /* animacja 0.2s */
 }
 
+.parentLink.activeLink {
+  font-weight: bold;
+  color: black;
+  position: relative; /* potrzebne do ::after */
+}
+
+.parentLink.activeLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px; /* przesunięcie linii w dół */
+  width: 100%;
+  height: 2px; /* grubość linii */
+  background-color: #bc7f79; /* kolor podkreślenia */
+}
+#menuContainer > .activeLink {
+  position: relative;
+  font-weight: bold;
+  color: black; /* lub biały, zależnie od designu */
+}
+
+#menuContainer > .activeLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px; /* przesunięcie w dół */
+  width: 100%;
+  height: 2px; /* grubość linii */
+  background-color: #bc7f79; /* kolor podkreślenia */
+}
+
 #wesprzyjButton:hover {
   background-color: rgba(188, 127, 121, 0.8); /* półprzezroczyste tło */
   cursor: pointer;

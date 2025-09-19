@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import zoomIn from "../Pictures/Font_increase.png";
 import Contrast from "../Pictures/Contrast_filled.png";
 import "../Css/Menu_web.css";
@@ -8,6 +8,13 @@ import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 const Menu_Web = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation(); // pozwala sprawdzić aktualny URL
+
+  // Sprawdzanie, czy aktualny URL jest podstroną "O FUNDACJI"
+  const isFundacjaActive =
+    location.pathname.startsWith("/misja") ||
+    location.pathname.startsWith("/zespol") ||
+    location.pathname.startsWith("/media");
 
   return (
     <div id="menuContainer">
@@ -15,6 +22,7 @@ const Menu_Web = () => {
       <div style={{ position: "relative" }}>
         <button
           onClick={() => setOpen(!open)}
+          className={`parentLink ${isFundacjaActive ? "activeLink" : ""}`}
           style={{
             background: "none",
             border: "none",
@@ -37,8 +45,9 @@ const Menu_Web = () => {
               zIndex: "10",
             }}
           >
-            <Link
+            <NavLink
               to="/misja"
+              className={({ isActive }) => (isActive ? "activeLink" : "")}
               style={{
                 display: "block",
                 padding: "8px 16px",
@@ -48,9 +57,10 @@ const Menu_Web = () => {
               }}
             >
               NASZA MISJA
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/zespol"
+              className={({ isActive }) => (isActive ? "activeLink" : "")}
               style={{
                 display: "block",
                 padding: "8px 16px",
@@ -60,9 +70,10 @@ const Menu_Web = () => {
               }}
             >
               ZESPÓŁ
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/media"
+              className={({ isActive }) => (isActive ? "activeLink" : "")}
               style={{
                 display: "block",
                 padding: "8px 16px",
@@ -72,20 +83,39 @@ const Menu_Web = () => {
               }}
             >
               MEDIA O NAS
-            </Link>
+            </NavLink>
           </div>
         )}
       </div>
 
       {/* Reszta linków */}
-      <Link to="/projekty">PROJEKTY</Link>
-      <Link to="/aktualnosci">AKTUALNOŚCI</Link>
-      <Link to="/kontakt">KONTAKT</Link>
+      <NavLink
+        to="/projekty"
+        className={({ isActive }) => (isActive ? "activeLink" : "")}
+      >
+        PROJEKTY
+      </NavLink>
+      <NavLink
+        to="/aktualnosci"
+        className={({ isActive }) => (isActive ? "activeLink" : "")}
+      >
+        AKTUALNOŚCI
+      </NavLink>
+      <NavLink
+        to="/kontakt"
+        className={({ isActive }) => (isActive ? "activeLink" : "")}
+      >
+        KONTAKT
+      </NavLink>
 
       {/* Wesprzyj */}
-      <Link id="wesprzyjButton" to="/wesprzyj">
+      <NavLink
+        id="wesprzyjButton"
+        to="/wesprzyj"
+        className={({ isActive }) => (isActive ? "activeLink" : "")}
+      >
         WESPRZYJ
-      </Link>
+      </NavLink>
 
       {/* Przycisk z ikoną Contrast */}
       <button
