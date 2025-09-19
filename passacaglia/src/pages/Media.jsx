@@ -32,7 +32,16 @@ const Media = () => {
             ></div>
             <div className="media_text">
               <h5>RADIO OPOLE</h5>
-              <p>Gratka dla miłośników muzyki dawnej na dwóch koncertach.</p>
+              <p>
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="media_text_link"
+                >
+                  Gratka dla miłośników muzyki dawnej na dwóch koncertach.
+                </a>
+              </p>
             </div>
           </div>
           <div class="media_item">
@@ -45,8 +54,15 @@ const Media = () => {
             <div class="media_text">
               <h5>RADIO DOXA</h5>
               <p>
-                Adwentowe Brzmienia Baroku – koncert w Muzeum Diecezjalnym w
-                Opolu.
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="media_text_link"
+                >
+                  Adwentowe Brzmienia Baroku – koncert w Muzeum Diecezjalnym w
+                  Opolu.
+                </a>
               </p>
             </div>
           </div>
@@ -58,10 +74,17 @@ const Media = () => {
               }}
             ></div>
             <div class="media_text">
+              <h5>NOWA TRYBUNA OPOLSKA</h5>
               <p>
-                <h5>NOWA TRYBUNA OPOLSKA</h5>
-                Trwa „Jesień z muzyką dawną”. Kolejny z koncertów już w
-                niedzielę (6 października) w Prószkowie.
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="media_text_link"
+                >
+                  Trwa „Jesień z muzyką dawną”. Kolejny z koncertów już w
+                  niedzielę (6 października) w Prószkowie.
+                </a>
               </p>
             </div>
           </div>
@@ -74,7 +97,16 @@ const Media = () => {
             ></div>
             <div class="media_text">
               <h5>RADIO DOXA</h5>
-              <p>Nadchodzi „Jesień z muzyką dawną”.</p>
+              <p>
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="media_text_link"
+                >
+                  Nadchodzi „Jesień z muzyką dawną”.
+                </a>
+              </p>
             </div>
           </div>
         </div>

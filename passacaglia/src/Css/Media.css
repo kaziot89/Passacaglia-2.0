@@ -53,3 +53,16 @@
   font-family: Merriweather Sans;
   line-height: 25px;
 }
+.media_text p a {
+  font-size: 16px;
+  font-family: Merriweather Sans;
+  line-height: 25px;
+}
+.media_text_link {
+  color: inherit; /* zachowuje kolor tekstu */
+  text-decoration: none; /* usuwa podkreślenie */
+  font-weight: normal; /* takie jak w <p> */
+  line-height: 1.5; /* dopasuj do swojego <p> */
+  letter-spacing: normal; /* usuwa różnice w spacingu */
+  font-family: inherit; /* dziedziczy rodzinę fontów z <p> */
+}
