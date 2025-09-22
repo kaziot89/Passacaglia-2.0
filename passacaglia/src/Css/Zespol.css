@@ -19,7 +19,6 @@
 .picture {
   width: 323px;
   height: 415px;
-  background-color: red;
   flex-shrink: 0;
   margin-right: 24px;
   background-size: cover;

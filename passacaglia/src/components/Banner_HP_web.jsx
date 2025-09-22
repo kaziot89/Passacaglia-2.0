@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import bannerImg1 from "../Pictures/Banner_HP_background.png";
-import bannerImg2 from "../Pictures/Banner_HP_background2.png";
-import bannerImg3 from "../Pictures/IMG_0231.jpg";
+import bannerImg3 from "../Pictures/Banner_HP_background2.png";
+import bannerImg2 from "../Pictures/IMG_0231.jpg";
 
 const Banner_HP_web = () => {
   const images = [bannerImg1, bannerImg2, bannerImg3];
@@ -35,7 +35,7 @@ const Banner_HP_web = () => {
             height: "100%",
             backgroundImage: `url(${img})`,
             backgroundSize:
-              index === 2 ? "cover" : index === 1 ? "120% auto" : "cover",
+              index === 1 ? "cover" : index === 2 ? "120% auto" : "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             transition: "opacity 1s ease-in-out",
