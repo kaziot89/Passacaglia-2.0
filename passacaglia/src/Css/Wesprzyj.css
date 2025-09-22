@@ -1,0 +1,75 @@
+#wesprzyj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wesprzyj h1 {
+  margin: 64px 0;
+  font-family: "Merriweather", serif;
+  color: #4a727b;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+#wesprzyj h3 {
+  font-size: 24px;
+
+  text-align: center;
+}
+#wesprzyj_paragraph {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  font-family: Merriweather Sans;
+  line-height: 28px;
+  text-align: center;
+}
+#wesprzyj_container h3 {
+  margin-top: 48px;
+  font-family: Merriweather Sans;
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: normal;
+}
+#bank_container,
+#patron_container,
+#tax_container {
+  background-color: #f6f8f8;
+}
+#bank_container {
+  height: 288px;
+}
+#bank_container h3,
+#patron_container h3,
+#tax_container h3 {
+  color: #bc7f79;
+  font-family: "Merriweather", serif;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 40px;
+  padding: 24px 0 16px 0;
+}
+#bank_container p {
+  font-family: Merriweather Sans;
+  color: #4a727b;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+#patron_container {
+  margin: 22px 0;
+  height: 202px;
+}
+#tax_container {
+  height: 282px;
+}
+#account_info,
+#parton_info,
+#tax_info {
+  text-align: center;
+}
+#tax_container p {
+  font-family: Merriweather Sans;
+  color: #4a727b;
+  font-size: 14px;
+  line-height: 24px;
+}

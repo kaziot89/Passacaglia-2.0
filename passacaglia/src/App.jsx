@@ -3,7 +3,9 @@ import Home from "./pages/Home";
 import Misja from "./pages/Misja";
 import Zespol from "./pages/Zespol";
 import Media from "./pages/Media";
-import Projekty from "./pages/Projekty"
+import Projekty from "./pages/Projekty";
+import Aktualnosci from "./pages/Aktualnosci";
+import Wesprzyj from "./pages/Wesprzyj";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
         <Route path="/zespol" element={<Zespol />} />
         <Route path="/media" element={<Media />} />
         <Route path="projekty" element={<Projekty />} />
+        <Route path="aktualnosci" element={<Aktualnosci />} />
+        <Route path="wesprzyj" element={<Wesprzyj />} />
       </Routes>
     </Router>
   );

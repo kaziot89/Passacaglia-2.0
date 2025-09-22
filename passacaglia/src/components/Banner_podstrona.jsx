@@ -5,7 +5,7 @@ const Banner_podstrona = ({ image, style }) => {
     <div
       style={{
         width: "1440px",
-        height: "400px",
+        height: "385px",
         margin: "auto",
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",

@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import bannerImg1 from "../Pictures/Banner_HP_background.png";
 import bannerImg2 from "../Pictures/Banner_HP_background2.png";
+import bannerImg3 from "../Pictures/IMG_0231.jpg";
 
 const Banner_HP_web = () => {
-  const images = [bannerImg1, bannerImg2];
+  const images = [bannerImg1, bannerImg2, bannerImg3];
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -33,8 +34,10 @@ const Banner_HP_web = () => {
             width: "100%",
             height: "100%",
             backgroundImage: `url(${img})`,
-            backgroundSize: index === 1 ? "120% auto" : "cover",
+            backgroundSize:
+              index === 2 ? "cover" : index === 1 ? "120% auto" : "cover",
             backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
             transition: "opacity 1s ease-in-out",
             opacity: currentImage === index ? 1 : 0,
           }}
