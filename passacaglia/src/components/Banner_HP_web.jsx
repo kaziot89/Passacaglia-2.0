@@ -38,7 +38,7 @@ const Banner_HP_web = () => {
               index === 1 ? "cover" : index === 2 ? "120% auto" : "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            transition: "opacity 1s ease-in-out",
+            transition: "opacity 2s ease-in-out",
             opacity: currentImage === index ? 1 : 0,
           }}
         />
