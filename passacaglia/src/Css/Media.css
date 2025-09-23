@@ -1,5 +1,4 @@
 #media_page {
-  /* max-width: 685px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +44,6 @@
   font-family: Merriweather Sans;
   color: rgb(179 179 179);
   font-weight: 100;
-  /* margin: 12px 0; */
   line-height: 27px;
 }
 .media_text p {

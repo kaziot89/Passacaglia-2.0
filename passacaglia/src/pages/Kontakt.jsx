@@ -14,7 +14,7 @@ const Kontakt = () => {
       <Menu_Web />
       <Banner_podstrona
         image={mediaImg}
-        style={{ backgroundPosition: `left 1700px`, backgroundSize: "180%" }}
+        style={{ backgroundPosition: `center 1350px`, backgroundSize: "130%" }}
       />
       <div id="kontakt_container">
         <h1>
@@ -67,20 +67,22 @@ const Kontakt = () => {
             ></textarea>
 
             <div className="checkbox-group">
-              <label>
-                <input type="checkbox" name="rodo" required />
-                Zgoda na przetwarzanie danych osobowych*
-              </label>
+              <div id="labels">
+                <label>
+                  <input type="checkbox" name="rodo" required />
+                  Zgoda na przetwarzanie danych osobowych*
+                </label>
 
-              <label>
-                <input type="checkbox" name="privacy" />
-                Akceptuję politykę prywatności
-              </label>
+                <label>
+                  <input type="checkbox" name="privacy" />
+                  Akceptuję politykę prywatności
+                </label>
+              </div>
+
+              <button type="submit" className="submit-btn">
+                WYŚLIJ
+              </button>
             </div>
-
-            <button type="submit" className="submit-btn">
-              WYŚLIJ
-            </button>
           </form>
         </div>
       </div>
