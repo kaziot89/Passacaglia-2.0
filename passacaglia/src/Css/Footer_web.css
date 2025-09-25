@@ -3,15 +3,16 @@
 .footer {
   width: 100%;
   max-width: 1440px;
+  min-width: 1024px;
   margin: 0 auto;
   background-color: #4a727b;
-  padding: 40px;
+  padding: 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
   flex-wrap: wrap;
-  gap: 20px;
+  /* gap: 20px; */
   font-family: "Merriweather Sans", sans-serif;
 }
 
@@ -27,7 +28,7 @@
 .address-frame {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 14px;
 }
 
 .column {

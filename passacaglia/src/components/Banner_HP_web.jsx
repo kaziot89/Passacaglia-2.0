@@ -18,8 +18,10 @@ const Banner_HP_web = () => {
     <div
       style={{
         position: "relative",
-        width: "1440px",
-        height: "750px",
+        width: "100%", // ← pełna szerokość okna
+        minWidth: "1024px",
+        maxWidth: "1440px", // ← ale nie większa niż 1440 px
+        aspectRatio: "1440 / 750", // ← automatyczna wysokość w tej samej proporcji
         margin: "auto",
         overflow: "hidden",
       }}
@@ -29,16 +31,13 @@ const Banner_HP_web = () => {
           key={index}
           style={{
             position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
+            inset: 0,
             backgroundImage: `url(${img})`,
             backgroundSize:
               index === 1 ? "cover" : index === 2 ? "120% auto" : "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            transition: "opacity 2s ease-in-out",
+            transition: "opacity 1s ease-in-out",
             opacity: currentImage === index ? 1 : 0,
           }}
         />
