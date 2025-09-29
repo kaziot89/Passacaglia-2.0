@@ -1,0 +1,105 @@
+.menu_mobile {
+  display: none;
+  position: relative;
+  z-index: 1000;
+}
+
+@media (max-width: 1024px) {
+  .menu_mobile {
+    display: flex; /* używamy flexboxa */
+    justify-content: flex-end; /* hamburger po prawej */
+    align-items: center; /* wyśrodkowanie w pionie */
+    height: 80px;
+    padding: 0 16px; /* poziome paddingi */
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+    margin: 4px 0;
+    transition: transform 0.2s ease;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(-4px); /* górna kreska podskakuje w górę */
+    transition: transform 0.15s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  .hamburger.open span:nth-child(2) {
+    transform: translateY(0); /* środkowa lekko pulsuje */
+    transition: transform 0.15s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(4px); /* dolna kreska podskakuje w dół */
+    transition: transform 0.15s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  /* Rozwijane linki – poza viewportem na górze */
+  .mobileLinks {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* wyśrodkowanie w pionie */
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: top 0.4s ease;
+    z-index: 999;
+  }
+
+  .mobileLinks.open {
+    top: 0;
+  }
+
+  .mobileLinks a {
+    text-decoration: none;
+    color: #4a727b;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .mobileLinks a:hover {
+    color: #2c5a5f;
+  }
+  .closeButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4a727b;
+  }
+  .mobileLinks a {
+    text-decoration: none;
+    color: #4a727b;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .mobileLinks a:hover {
+    color: #2c5a5f;
+  }
+}

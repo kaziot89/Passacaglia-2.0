@@ -1,6 +1,7 @@
 import React from "react";
 import Banner_HP_web from "../components/Banner_HP_web";
 import Menu_Web from "../components/Menu_web";
+import Menu_Mobile from "../components/Menu_Mobile";
 import Logo_web from "../components/Logo_web";
 import More_button from "../components/More_button";
 import Footer from "../components/Footer_web";
@@ -13,6 +14,7 @@ const Home = () => {
     <div>
       <Logo_web />
       <Menu_Web />
+      <Menu_Mobile />
       <Banner_HP_web />
 
       <div id="misja">

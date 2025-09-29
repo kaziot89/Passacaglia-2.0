@@ -9,6 +9,7 @@
   padding-right: 24px;
   gap: 24px;
 }
+
 #wesprzyjButton {
   background-color: #bc7f79;
   color: white;
@@ -86,4 +87,10 @@
 
 #wesprzyjButton:hover {
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  #menuContainer {
+    display: none;
+  }
 }
