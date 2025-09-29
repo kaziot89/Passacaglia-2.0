@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import Banner_podstrona from "../components/Banner_podstrona";
 import Logo_web from "../components/Logo_web";
 import Menu_Web from "../components/Menu_web";
-import mediaImg from "../Pictures/kontakt.jpg";
+import kontaktImg from "../Pictures/kontakt.jpg";
 import Footer from "../components/Footer_web";
 
 import "../Css/Kontakt.css";
@@ -12,10 +12,7 @@ const Kontakt = () => {
     <div>
       <Logo_web />
       <Menu_Web />
-      <Banner_podstrona
-        image={mediaImg}
-        style={{ backgroundPosition: `center 1350px`, backgroundSize: "130%" }}
-      />
+      <Banner_podstrona image={kontaktImg} objectPosition="center 48%" />
       <div id="kontakt_container">
         <h1>
           SKONTAKTUJ SIĘ Z NAMI<div id="line"></div>

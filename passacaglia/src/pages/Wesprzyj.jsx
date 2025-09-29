@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import Banner_podstrona from "../components/Banner_podstrona";
 import Logo_web from "../components/Logo_web";
 import Menu_Web from "../components/Menu_web";
-import mediaImg from "../Pictures/wspracie.jpg";
+import wesprzyjImg from "../Pictures/wspracie.jpg";
 import Footer from "../components/Footer_web";
 
 import "../Css/Wesprzyj.css";
@@ -12,10 +12,7 @@ const Wesprzyj = () => {
     <div>
       <Logo_web />
       <Menu_Web />
-      <Banner_podstrona
-        image={mediaImg}
-        style={{ backgroundPosition: `center 3590px` }}
-      />
+      <Banner_podstrona image={wesprzyjImg} objectPosition="center 10%" />
       <div id="wesprzyj">
         <h1>
           WESPRZYJ NAS<div id="line"></div>

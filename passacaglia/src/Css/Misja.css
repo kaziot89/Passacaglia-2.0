@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-bottom: 64px;
+  min-width: 1024px;
 }
 #misja_page h1 {
   margin: 64px 0;

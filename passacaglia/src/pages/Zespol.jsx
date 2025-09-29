@@ -11,10 +11,7 @@ const Zespol = () => {
     <div>
       <Logo_web />
       <Menu_Web />
-      <Banner_podstrona
-        image={zespolImg}
-        style={{ backgroundPosition: `center 875px` }}
-      />
+      <Banner_podstrona image={zespolImg} objectPosition="center 70%" />
       <div id="zespol_page">
         <h1>
           ZESPÓŁ <div id="line"></div>

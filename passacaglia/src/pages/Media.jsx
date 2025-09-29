@@ -13,10 +13,7 @@ const Media = () => {
     <div>
       <Logo_web />
       <Menu_Web />
-      <Banner_podstrona
-        image={mediaImg}
-        style={{ backgroundPosition: `center 875px` }}
-      />
+      <Banner_podstrona image={mediaImg} objectPosition="center 70%" />
       <div id="media_page">
         <h1>
           MEDIA O NAS <div id="line"></div>

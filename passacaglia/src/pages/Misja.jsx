@@ -12,10 +12,7 @@ const Misja = () => {
     <div>
       <Logo_web />
       <Menu_Web />
-      <Banner_podstrona
-        image={misjaImg}
-        style={{ backgroundPosition: `center 875px` }}
-      />
+      <Banner_podstrona image={misjaImg} objectPosition="center 70%" />
 
       <div id="misja_page">
         <h1>

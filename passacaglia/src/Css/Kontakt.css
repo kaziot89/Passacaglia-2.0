@@ -1,3 +1,6 @@
+#kontakt_container {
+  min-width: 1024px;
+}
 #kontakt_container h1 {
   margin: 64px 0;
   font-family: "Merriweather", serif;
