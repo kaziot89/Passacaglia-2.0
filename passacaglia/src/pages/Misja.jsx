@@ -1,6 +1,7 @@
 import React from "react";
 import Logo_web from "../components/Logo_web";
 import Menu_Web from "../components/Menu_web";
+import Menu_Mobile from "../components/Menu_Mobile";
 import Banner_podstrona from "../components/Banner_podstrona";
 import misjaImg from "../Pictures/banner1.jpg";
 import Footer from "../components/Footer_web";
@@ -12,6 +13,7 @@ const Misja = () => {
     <div>
       <Logo_web />
       <Menu_Web />
+      <Menu_Mobile />
       <Banner_podstrona image={misjaImg} objectPosition="center 70%" />
 
       <div id="misja_page">

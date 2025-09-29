@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import Banner_podstrona from "../components/Banner_podstrona";
 import Logo_web from "../components/Logo_web";
 import Menu_Web from "../components/Menu_web";
+import Menu_Mobile from "../components/Menu_Mobile";
 import wesprzyjImg from "../Pictures/wspracie.jpg";
 import Footer from "../components/Footer_web";
 
@@ -12,6 +13,7 @@ const Wesprzyj = () => {
     <div>
       <Logo_web />
       <Menu_Web />
+      <Menu_Mobile />
       <Banner_podstrona image={wesprzyjImg} objectPosition="center 10%" />
       <div id="wesprzyj">
         <h1>

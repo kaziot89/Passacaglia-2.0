@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import Banner_podstrona from "../components/Banner_podstrona";
 import Logo_web from "../components/Logo_web";
 import Menu_Web from "../components/Menu_web";
+import Menu_Mobile from "../components/Menu_Mobile";
 import aktImg from "../Pictures/aktualnosci.jpg";
 import Footer from "../components/Footer_web";
 
@@ -12,6 +13,7 @@ const Aktualnosci = () => {
     <div>
       <Logo_web />
       <Menu_Web />
+      <Menu_Mobile />
       <Banner_podstrona image={aktImg} objectPosition="center 44%" />
       <div id="aktualnosci">
         <h1>

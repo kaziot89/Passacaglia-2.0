@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Banner_podstrona from "../components/Banner_podstrona";
 import Logo_web from "../components/Logo_web";
 import Menu_Web from "../components/Menu_web";
+import Menu_Mobile from "../components/Menu_Mobile";
 import mediaImg from "../Pictures/banner1.jpg";
 import radioopole from "../Pictures/radioopole.png";
 import doxa from "../Pictures/doxa.png";
@@ -13,6 +14,7 @@ const Media = () => {
     <div>
       <Logo_web />
       <Menu_Web />
+      <Menu_Mobile />
       <Banner_podstrona image={mediaImg} objectPosition="center 70%" />
       <div id="media_page">
         <h1>
