@@ -4,13 +4,12 @@ body {
 }
 
 #projekty_page {
-  /* max-width: 685px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 64px;
-  min-width: 1024px;
 }
+
 #projekty_page h1 {
   margin: 64px 0;
   font-family: "Merriweather", serif;
@@ -19,7 +18,9 @@ body {
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
+  text-align: center;
 }
+
 #projekty_page h2 {
   margin: 64px 0;
   font-family: "Merriweather", serif;
@@ -27,6 +28,7 @@ body {
   letter-spacing: 2px;
   font-size: 26px;
 }
+
 #projekty_page h3 {
   margin: 32px 0 16px;
   font-family: Merriweather Sans;
@@ -34,20 +36,109 @@ body {
   font-size: 16px;
   line-height: 25px;
 }
-#projekty_container p {
+
+.projekty_container_act p {
   font-size: 14px;
   font-family: Merriweather Sans;
   line-height: 28px;
   font-weight: 100;
 }
-#projekty_container {
-  max-width: 685px;
+
+.projekty_container_arc p {
+  font-size: 14px;
+  font-family: Merriweather Sans;
+  line-height: 28px;
+  font-weight: 100;
 }
 
-.button_container {
+#projekty_aktualne_section {
+  width: 1440px;
+  height: 358px;
+  gap: 64px;
+  opacity: 1;
+}
+
+#projekty_archiwalne_section {
+  width: 1440px;
+  height: 604px;
+  gap: 64px;
+  opacity: 1;
+}
+
+.projekty_container_act {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1041px;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1041px;
+  margin: 0 auto;
+}
+
+.projekty_container_arc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1041px;
+  margin: 0 auto;
+}
+
+.projekty_item {
   display: flex;
-  gap: 16px;
-  justify-content: flex-start;
-  margin-top: 32px;
-  padding-bottom: 40px;
+  padding: 16px;
+}
+
+.projekty_photo {
+  position: relative;
+  width: 331px;
+  height: 222px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 8px 24px -4px rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: 441px 441px;
+  background-position: -76px -42px;
+}
+
+.projekty_text {
+  width: 299px;
+  height: 68px;
+  padding: 10px;
+}
+
+.projekty_text h5 {
+  font-size: 24px;
+  font-family: Merriweather Sans;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  line-height: 35px;
+  position: absolute;
+  bottom: 5px;
+  padding: 8px;
+  letter-spacing: 0;
+}
+
+.projekty_text p {
+  font-size: 16px;
+  font-family: Merriweather Sans;
+  line-height: 25px;
+}
+
+.projekty_text p a {
+  font-size: 16px;
+  font-family: Merriweather Sans;
+  line-height: 25px;
+}
+
+.projekty_text_link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
 }
