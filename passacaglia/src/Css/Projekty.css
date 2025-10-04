@@ -10,6 +10,20 @@ body {
   padding-bottom: 64px;
 }
 
+#projekty_aktualne_section {
+  width: 1440px;
+  height: 358px;
+  gap: 64px;
+  opacity: 1;
+}
+
+#projekty_archiwalne_section {
+  width: 1440px;
+  height: 604px;
+  gap: 64px;
+  opacity: 1;
+}
+
 #projekty_page h1 {
   margin: 64px 0;
   font-family: "Merriweather", serif;
@@ -35,34 +49,6 @@ body {
   letter-spacing: 1px;
   font-size: 16px;
   line-height: 25px;
-}
-
-.projekty_container_act p {
-  font-size: 14px;
-  font-family: Merriweather Sans;
-  line-height: 28px;
-  font-weight: 100;
-}
-
-.projekty_container_arc p {
-  font-size: 14px;
-  font-family: Merriweather Sans;
-  line-height: 28px;
-  font-weight: 100;
-}
-
-#projekty_aktualne_section {
-  width: 1440px;
-  height: 358px;
-  gap: 64px;
-  opacity: 1;
-}
-
-#projekty_archiwalne_section {
-  width: 1440px;
-  height: 604px;
-  gap: 64px;
-  opacity: 1;
 }
 
 .projekty_container_act {
@@ -141,4 +127,18 @@ body {
   text-decoration: none;
   color: white;
   padding: 8px;
+}
+
+.projekty_container_act p {
+  font-size: 14px;
+  font-family: Merriweather Sans;
+  line-height: 28px;
+  font-weight: 100;
+}
+
+.projekty_container_arc p {
+  font-size: 14px;
+  font-family: Merriweather Sans;
+  line-height: 28px;
+  font-weight: 100;
 }

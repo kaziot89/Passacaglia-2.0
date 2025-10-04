@@ -11,6 +11,8 @@ const Footer = () => {
         <div
           className="footer-logo"
           style={{ backgroundImage: `url(${logo})` }}
+          role="img" 
+          aria-label="Logo Fundacji Passacaglia"
         />
       </Link>
 
@@ -64,7 +66,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://https://www.youtube.com/@jesienzmuzykadawna.com"
+            href="https://www.youtube.com/@jesienzmuzykadawna"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Odwiedź nas na YouTube"
