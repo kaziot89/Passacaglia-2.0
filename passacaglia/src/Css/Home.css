@@ -75,7 +75,7 @@ a {
   width: 100%;
   max-width: 1440px;
   min-width: 1024px;
-  aspect-ratio: 1440 / 689;
+  /* aspect-ratio: 1440 / 689; */
   margin: 0 auto;
   text-align: center;
   background-color: #4a727b0a;

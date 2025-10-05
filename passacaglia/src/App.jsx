@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Misja from "./pages/Misja";
 import Zespol from "./pages/Zespol";
@@ -18,10 +18,10 @@ function App() {
         <Route path="/misja" element={<Misja />} />
         <Route path="/zespol" element={<Zespol />} />
         <Route path="/media" element={<Media />} />
-        <Route path="projekty" element={<Projekty />} />
-        <Route path="aktualnosci" element={<Aktualnosci />} />
-        <Route path="wesprzyj" element={<Wesprzyj />} />
-        <Route path="kontakt" element={<Kontakt />} />
+        <Route path="/projekty" element={<Projekty />} />
+        <Route path="/aktualnosci" element={<Aktualnosci />} />
+        <Route path="/wesprzyj" element={<Wesprzyj />} />
+        <Route path="/kontakt" element={<Kontakt />} />
       </Routes>
     </Router>
   );

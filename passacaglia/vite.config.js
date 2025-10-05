@@ -1,7 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   plugins: [react()],
-  base: mode === "production" ? "/Passacaglia-2.0/" : "/",
-}));
+  // bardzo ważne: ścieżka zgodna z nazwą repozytorium
+  base: "/Passacaglia-2.0/",
+});
