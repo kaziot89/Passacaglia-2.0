@@ -4,6 +4,7 @@ import Misja from "./pages/Misja";
 import Zespol from "./pages/Zespol";
 import Media from "./pages/Media";
 import Projekty from "./pages/Projekty";
+import ProjektyDetails from "./pages/ProjektyDetails";
 import Aktualnosci from "./pages/Aktualnosci";
 import Wesprzyj from "./pages/Wesprzyj";
 import Kontakt from "./pages/Kontakt";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/zespol" element={<Zespol />} />
         <Route path="/media" element={<Media />} />
         <Route path="projekty" element={<Projekty />} />
+        <Route path="/projekty/:slug" element={<ProjektyDetails />} />
         <Route path="aktualnosci" element={<Aktualnosci />} />
         <Route path="wesprzyj" element={<Wesprzyj />} />
         <Route path="kontakt" element={<Kontakt />} />

@@ -1,0 +1,88 @@
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+.projekt-details-page {
+  max-width: 685px;
+  height: 1469.3333740234375px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  gap: 40px;
+  opacity: 1;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.projekt-title {
+  font-family: Merriweather Sans;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 55px;
+  letter-spacing: 0;
+  max-width: 685px;
+  height: 55px;
+  gap: 8px;
+  opacity: 1;
+}
+
+.projekt-details {
+  max-width: 685px;
+  margin: 0 auto;
+}
+
+.projekt-details h3 {
+  font-family: Merriweather;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 26px;
+  line-height: 27px;
+  letter-spacing: 0;
+  padding-top: 28px;
+  color: #4a727b;
+}
+
+.projekt-image {
+  width: 100%;
+  max-height: 450px;
+  /* object-fit: cover; */
+  border-radius: 12px;
+  margin-bottom: 20px;
+  /* padding: 40px; */
+}
+
+.projekt-info {
+  font-family: Merriweather Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.projekty_btn {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.projekty_btn:hover {
+  background: #444;
+}
+
+.projekty_back_link {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #555;
+}
+
+.projekty_back_link:hover {
+  color: black;
+}
