@@ -40,9 +40,9 @@ const Misja = () => {
             poinformowanego; inicjowanie działań syntetyzujących różne dziedziny
             sztuki i nauki z muzyką.
           </p>
-          <div class="button_container">
-            <button class="oval_button">POBIERZ STATUT</button>
-            <button class="oval_button">POBIERZ LOGOTYPY</button>
+          <div className="button_container">
+            <button className="oval_button">POBIERZ STATUT</button>
+            <button className="oval_button">POBIERZ LOGOTYPY</button>
           </div>
           <div id="cele_container">
             <h2>Fundacja realizuje swoje cele poprzez:</h2>
