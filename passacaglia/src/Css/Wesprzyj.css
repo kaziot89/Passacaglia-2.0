@@ -74,3 +74,28 @@
   font-size: 14px;
   line-height: 24px;
 }
+@media (max-width: 1024px) and (min-width: 769px) {
+  #wesprzyj {
+    min-width: 100%;
+  }
+  #wesprzyj_paragraph {
+    width: 85%;
+  }
+
+  #bank_container,
+  #patron_container,
+  #tax_container {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  #wesprzyj_container h3 {
+    margin-top: 24px;
+  }
+  #tax_container {
+    margin-bottom: 48px;
+  }
+  #bank_container {
+    margin-top: 48px;
+  }
+}

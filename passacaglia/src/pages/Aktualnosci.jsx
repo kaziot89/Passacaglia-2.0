@@ -6,7 +6,7 @@ import Menu_Mobile from "../components/Menu_Mobile";
 import aktImg from "../Pictures/aktualnosci.jpg";
 import Footer from "../components/Footer_web";
 
-import "../Css/Media.css";
+// import "../Css/Media.css";
 import "../Css/Aktualnosci.css";
 const Aktualnosci = () => {
   return (
@@ -15,12 +15,12 @@ const Aktualnosci = () => {
       <Menu_Web />
       <Menu_Mobile />
       <Banner_podstrona image={aktImg} objectPosition="center 44%" />
-      <div id="aktualnosci">
+      <div id="aktualnosci_sub">
         <h1>
           CO NOWEGO<div id="line"></div>
         </h1>
-        <div id="aktualnosci_container">
-          <div className="akt">
+        <div id="aktualnosci_container_sub">
+          <div className="akt_sub">
             <div
               className="akt_photo"
               //   style={{
@@ -41,7 +41,7 @@ const Aktualnosci = () => {
               </p>
             </div>
           </div>
-          <div className="akt">
+          <div className="akt_sub">
             <div
               className="akt_photo"
               //   style={{
@@ -62,7 +62,7 @@ const Aktualnosci = () => {
               </p>
             </div>
           </div>
-          <div className="akt">
+          <div className="akt_sub">
             <div
               className="akt_photo"
               //   style={{

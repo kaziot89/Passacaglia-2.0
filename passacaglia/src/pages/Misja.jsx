@@ -28,17 +28,17 @@ const Misja = () => {
             Swoją nazwę zawdzięcza wywodzącej się z XVII-wiecznego tańca formie
             wariacji, opartych na stałym temacie (ostinato), pojawiającym się w
             partii basu. Podobnie stałym motywem działań Fundacji jest muzyka
-            dawna, szczególnie okresów baroku i klasycyzmu. Celem Fundacji jest
-            działalność w obszarze kultury, sztuki, ochrony dóbr kultury i
-            dziedzictwa narodowego oraz nauki, edukacji i wychowania, obejmująca
-            przede wszystkim: propagowanie muzyki klasycznej, ze szczególnym
-            uwzględnieniem muzyki dawnej; wspieranie i promocję muzyków, zarówno
-            dorosłych, jak i uzdolnionych dzieci i młodzieży, w tym związanych
-            ze środowiskiem lokalnym obszaru działalności fundacji;
-            popularyzację muzyki klasycznej w środowiskach zagrożonych
-            wykluczeniem kulturalnym; rozwój wykonawstwa historycznie
-            poinformowanego; inicjowanie działań syntetyzujących różne dziedziny
-            sztuki i nauki z muzyką.
+            dawna, szczególnie okresów baroku i klasycyzmu.<br></br>
+            <br></br> Celem Fundacji jest działalność w obszarze kultury,
+            sztuki, ochrony dóbr kultury i dziedzictwa narodowego oraz nauki,
+            edukacji i wychowania, obejmująca przede wszystkim: propagowanie
+            muzyki klasycznej, ze szczególnym uwzględnieniem muzyki dawnej;
+            wspieranie i promocję muzyków, zarówno dorosłych, jak i uzdolnionych
+            dzieci i młodzieży, w tym związanych ze środowiskiem lokalnym
+            obszaru działalności fundacji; popularyzację muzyki klasycznej w
+            środowiskach zagrożonych wykluczeniem kulturalnym; rozwój
+            wykonawstwa historycznie poinformowanego; inicjowanie działań
+            syntetyzujących różne dziedziny sztuki i nauki z muzyką.
           </p>
           <div className="button_container">
             <button className="oval_button">POBIERZ STATUT</button>

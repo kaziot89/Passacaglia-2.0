@@ -53,3 +53,11 @@ body {
   margin-top: 32px;
   padding-bottom: 40px;
 }
+@media (max-width: 1024px) and (min-width: 769px) {
+  #misja_page {
+    min-width: 100%;
+  }
+  #misja_container {
+    max-width: 90%;
+  }
+}

@@ -18,7 +18,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; /* ← tu zmiana */
-  gap: 24px; /* równe odstępy zamiast space-between */
 }
 
 .media_item {
@@ -66,4 +65,9 @@
   line-height: 1.5;
   letter-spacing: normal;
   font-family: inherit; /* dziedziczy rodzinę fontów z <p> */
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  #media_page {
+    min-width: 100%;
+  }
 }

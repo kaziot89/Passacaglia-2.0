@@ -114,3 +114,17 @@ textarea::placeholder {
 .submit-btn:hover {
   background-color: rgba(188, 127, 121, 0.85);
 }
+@media (max-width: 1024px) and (min-width: 769px) {
+  #kontakt_container {
+    min-width: 100%;
+  }
+  .contact-wrapper {
+    flex-direction: column;
+    padding: 0 42px 80px;
+  }
+  .contact-form,
+  input,
+  textarea {
+    width: 100%;
+  }
+}

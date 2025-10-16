@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 html {
-  /* width: fit-content; */
   margin: 0 auto;
 }
 body {
@@ -71,11 +70,9 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   max-width: 1440px;
   min-width: 1024px;
-  /* aspect-ratio: 1440 / 689; */
   margin: 0 auto;
   text-align: center;
   background-color: #4a727b0a;
@@ -131,4 +128,40 @@ a {
 
 #owcip_text p {
   margin: 0;
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  #misja {
+    min-width: 100%;
+  }
+  #misja_text {
+    width: 90%;
+  }
+  #aktualnosci {
+    max-width: none;
+    min-width: 100%;
+  }
+  #owcip {
+    width: 90%;
+    margin: 48px auto;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #owcip_logo2 img {
+    height: 114px;
+  }
+
+  #owcip_logo1 {
+    order: 1;
+  }
+
+  #owcip_logo2 {
+    order: 2;
+  }
+
+  #owcip_text {
+    order: 3;
+    flex: 0 0 100%;
+    margin: 32px 0 0;
+  }
 }

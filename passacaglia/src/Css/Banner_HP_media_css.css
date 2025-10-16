@@ -1,0 +1,15 @@
+.banner-container {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  aspect-ratio: 1440 / 750;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) and (min-width: 678px) {
+  .banner-container {
+    max-width: 1024px;
+    aspect-ratio: 750 / 786;
+  }
+}

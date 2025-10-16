@@ -24,26 +24,63 @@ export default function Menu_Mobile() {
         <button className="closeButton" onClick={() => setOpen(false)}>
           &times;
         </button>
+        <NavLink to="/" onClick={(e) => e.preventDefault()}>
+          O FUNDACJI
+        </NavLink>
 
-        <NavLink to="/misja" onClick={() => setOpen(false)}>
+        <NavLink
+          to="/misja"
+          className={({ isActive }) => (isActive ? "activeLink" : "")}
+          onClick={() => setOpen(false)}
+        >
           NASZA MISJA
         </NavLink>
-        <NavLink to="/zespol" onClick={() => setOpen(false)}>
+
+        <NavLink
+          to="/zespol"
+          className={({ isActive }) => (isActive ? "activeLink" : "")}
+          onClick={() => setOpen(false)}
+        >
           ZESPÓŁ
         </NavLink>
-        <NavLink to="/media" onClick={() => setOpen(false)}>
-          MEDIA O NAS
+
+        <NavLink
+          to="/media"
+          className={({ isActive }) => (isActive ? "activeLink" : "")}
+          onClick={() => setOpen(false)}
+        >
+          MADIA O NAS
         </NavLink>
-        <NavLink to="/projekty" onClick={() => setOpen(false)}>
-          PROJEKTY
+
+        <NavLink
+          to="/projekty"
+          className={({ isActive }) => (isActive ? "activeLink" : "")}
+          onClick={() => setOpen(false)}
+        >
+          PROJEKTY{" "}
         </NavLink>
-        <NavLink to="/aktualnosci" onClick={() => setOpen(false)}>
+
+        <NavLink
+          to="/aktualnosci"
+          className={({ isActive }) => (isActive ? "activeLink" : "")}
+          onClick={() => setOpen(false)}
+        >
           AKTUALNOŚCI
         </NavLink>
-        <NavLink to="/kontakt" onClick={() => setOpen(false)}>
+
+        <NavLink
+          to="/kontakt"
+          className={({ isActive }) => (isActive ? "activeLink" : "")}
+          onClick={() => setOpen(false)}
+        >
           KONTAKT
         </NavLink>
-        <NavLink to="/wesprzyj" onClick={() => setOpen(false)}>
+
+        <NavLink
+          id="wesprzyjButton"
+          to="/wesprzyj"
+          className={({ isActive }) => (isActive ? "activeLink" : "")}
+        >
           WESPRZYJ
         </NavLink>
       </div>

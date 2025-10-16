@@ -1,4 +1,44 @@
-.akt {
+#aktualnosci_sub {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #4a727b0a;
+  padding-bottom: 64px;
+}
+#aktualnosci_sub h1 {
+  margin: 64px 0;
+  font-family: "Merriweather", serif;
+  color: #4a727b;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+#aktualnosci_container_sub {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.akt_sub {
+  flex: 1;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.2);
+}
+
+.akt_sub {
   text-align: left;
 }
 .akt_photo {
@@ -42,3 +82,32 @@
 /* #aktualnosci {
   aspect-ratio: none;
 } */
+@media (max-width: 1024px) and (min-width: 769px) {
+  #aktualnosci_sub {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  #aktualnosci_container_sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* rozsuwa karty do boków */
+    align-items: flex-start;
+    width: 90%;
+    max-width: 920px; /*dwie karty po 330px + margines*/
+    margin: 0 auto;
+  }
+
+  .akt_sub {
+    width: 330px;
+    height: 337px;
+    flex: 0 0 330px;
+    margin-bottom: 24px;
+  }
+
+  /* utrzymuje lewą krawędź w ostatnim rzędzie */
+  #aktualnosci_container_sub::after {
+    content: "";
+    flex: 0 0 330px;
+  }
+}
