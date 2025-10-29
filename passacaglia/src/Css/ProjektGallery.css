@@ -1,14 +1,15 @@
-/* GRID */
 .photogallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
   max-width: 685px;
   margin: 40px auto;
+  justify-items: center;
 }
 
 .photogallery-img {
   width: 100%;
+  max-width: 300px;
   height: 217px;
   object-fit: cover;
   border-radius: 8px;
@@ -20,7 +21,6 @@
   transform: scale(1.02);
 }
 
-/* MODAL */
 .modal-overlay {
   position: fixed;
   top: 0;
