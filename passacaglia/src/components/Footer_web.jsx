@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import { NavLink } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import logo from "../Pictures/Logo_banner.png";
 import "../Css/Footer_web.css";
@@ -42,7 +44,14 @@ const Footer = () => {
       </address>
 
       <div className="footer-support">
-        <button className="support-button">WESPRZYJ</button>
+        <NavLink
+                id="wesprzyjButton"
+                to="/wesprzyj"
+                className={({ isActive }) => (isActive ? "activeLink" : "")}
+              >
+                WESPRZYJ
+              </NavLink>
+        {/* <button className="support-button">WESPRZYJ</button> */}
 
         <div className="social-buttons">
           <a

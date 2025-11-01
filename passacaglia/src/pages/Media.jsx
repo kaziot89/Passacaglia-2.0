@@ -8,6 +8,7 @@ import mediaImg from "../Pictures/banner1.jpg";
 import radioopole from "../Pictures/radioopole.png";
 import doxa from "../Pictures/doxa.png";
 import nto from "../Pictures/nto.png";
+import Footer from "../components/Footer_web";
 import "../Css/Media.css";
 const Media = () => {
   return (
@@ -33,7 +34,7 @@ const Media = () => {
               <h5>RADIO OPOLE</h5>
               <p>
                 <a
-                  href="https://example.com"
+                  href="https://radio.opole.pl/113,2&idpi=130&idxi=860218&go=morelistinsert&si=91"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="media_text_link"
@@ -54,7 +55,7 @@ const Media = () => {
               <h5>RADIO DOXA</h5>
               <p>
                 <a
-                  href="https://example.com"
+                  href="https://doxa.fm/aktualnosci/region/adwentowe-brzmienia-baroku-koncert-w-muzeum-diecezjalnym-w-opolu/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="media_text_link"
@@ -76,7 +77,7 @@ const Media = () => {
               <h5>NOWA TRYBUNA OPOLSKA</h5>
               <p>
                 <a
-                  href="https://example.com"
+                  href="https://nto.pl/trwa-jesien-z-muzyka-dawna-kolejny-z-koncertow-juz-w-niedziele-6-pazdziernika-w-proszkowie/ar/c13-18852693"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="media_text_link"
@@ -109,6 +110,7 @@ const Media = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
