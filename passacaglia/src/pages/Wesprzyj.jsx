@@ -63,7 +63,7 @@ const Wesprzyj = () => {
           <div id="patron_container">
             <h3>Zostań patronem Fundacji w serwisie Patronite </h3>
             <div id="parton_info">
-              <a href="">Zobacz profil</a>
+              <a href="https://www.patronite.pl/passacaglia">Zobacz profil</a>
             </div>
           </div>
           <div id="tax_container">
@@ -82,7 +82,7 @@ const Wesprzyj = () => {
               <p style={{ marginTop: "8px" }}>
                 Numer konta: 35 2030 0045 1110 0000 0382 5640
               </p>
-              <a href="">Zobacz profil</a>
+              <a href="https://fsmm.pl/partner/fundacja-promocji-muzyki-dawnej-passacaglia/">Zobacz profil</a>
             </div>
           </div>
         </div>
