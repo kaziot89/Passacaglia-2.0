@@ -1,12 +1,17 @@
 const Jesien2Images = import.meta.glob("../Pictures/Jesien2/**/*", {
   eager: true,
 });
+// const Jesien2Gallery = Object.values(Jesien2Images).map((img) => img.default);
+
 const Jesien2Gallery = {};
+
 for (const path in Jesien2Images) {
-  const parts = path.split("/");
-  const folder = parts[parts.length - 2]; // nazwa podfolderu
-  if (!Jesien2Gallery[folder]) Jesien2Gallery[folder] = [];
-  Jesien2Gallery[folder].push(Jesien2Images[path].default);
+  const cityMatch = path.match(/Jesien2\/([^/]+)\//); // wyłapuje nazwę folderu np. "Kamień"
+  if (cityMatch) {
+    const city = cityMatch[1];
+    if (!Jesien2Gallery[city]) Jesien2Gallery[city] = [];
+    Jesien2Gallery[city].push(Jesien2Images[path].default);
+  }
 }
 
 const PrzestrzenImages = import.meta.glob("../Pictures/Przestrzen/*", {
@@ -40,9 +45,19 @@ export const projektyData = [
     category: "aktualne",
     image: Object.values(Jesien2Gallery)[0][0],
     description: `
-      Druga edycja cyklu koncertów poświęconych muzyce dawnej. 
-      W ramach projektu zaprezentowane zostaną unikalne dzieła barokowe 
-      w wykonaniu młodych artystów, z wykorzystaniem instrumentów historycznych.
+     Tegoroczna edycja festiwalu muzyki dawnej na Śląsku Opolskim już za nami. W ramach “Jesieni z muzyką dawną” w dniach 06-14.09.2025 odbyły się 4 koncerty: w Głuchołazach (Dom Artysty), Głogówku (Kościół św. Bartłomieja), Kamieniu Śląskim (Sanktuarium św. Jacka) oraz w Niemodlinie (Zamek Książęcy). Wystąpili znakomici artyści specjalizujący się w wykonawstwie historycznym. Odbyły się również dwa wydarzenia towarzyszące.
+Otwierający cykl koncert w Głuchołazach prezentował słuchaczom muzykę kameralną mistrzów niemieckiego baroku, w wykonaniu Moniki Targowskiej (flet traverso), Marii Misiarz (wiolonczela barokowa) oraz Joanny Owczarek-Ciszewskiej (klawesyn). Lokalizacja w miejscu doświadczonym żywiołem powodzi miała za zadanie m.in. przywrócić ruch turystyczny i pokazać walory kulturalne miasta. 
+Z kolei koncert w Głogówku, zatytułowany „Barokowa scena młodych” był okazją do promocji młodych, utalentowanych muzyków, dopiero rozpoczynających swoją ścieżkę artystyczną na polu wykonawstwa historycznego. W wyjątkowej przestrzeni kościoła św. Bartłomieja, będącego perłą baroku na opolszczyźnie, zabrzmiała muzyka dojrzałego baroku. Wystąpiły wyróżniające się studentki wydziału muzyki dawnej Akademii Muzycznej w Łodzi: Aleksandra Pawluczuk (flet traverso), Gabriela Pietraszewska-Bryła (obój barokowy), Karolina Kelm (wiolonczela barokowa) oraz Natalia Kwiecińska (klawesyn).
+W Kamieniu Śląskim miał miejsce recital fortepianowy nawiązujący do tradycji poloneza oraz  postaci słynnych bohaterów. Polonez, pochodzący z XVI wieku, a znany pod obecną nazwą od wieku XVIII, jest jednym z pięciu tradycyjnych tańców polskich. Uznaje się go za taniec symboliczny - towarzyszące mu wartości, takie jak równość i współpraca, stanowią o jego integracyjnym charakterze. Recital p.t. „Muzyczny portret Bohatera” poświęcony tradycji poloneza i wielkim bohaterom polskiej historii, takim jak Tadeusz Kościuszko, wykonała na fortepianie historycznym Katarzyna Drogosz.
+Finałowy koncert na Zamku w Niemodlinie poświęcony był muzyce renesansu, korespondującej z architekturą i historią zamku oraz przypadającą w tym roku 500. rocznicą złożenia hołdu lennego królowi Zygmuntowi I Staremu przez księcia Prus Albrechta Hohenzollerna (tzw. hołdu pruskiego). Muzykę tego czasu na tle tendencji europejskich przedstawił jedyny w Polsce konsort fletów renesansowych „La Viva Fiamma”. 
+Jako dodatkowy element „Jesieni z muzyką dawną” miały miejsce 2 wydarzenia towarzyszące - spacery historyczne - po centrum Głogówka oraz terenu Zamku w Niemodlinie, bezpośrednio przed koncertami. 
+Dziękujemy serdecznie wszystkim partnerom, patronom i współorganizatorom festiwalu, dzięki którym wydarzenie dotarło do szerokiej publiczności i spotkało się z entuzjazmem słuchaczy. Do zobaczenia za rok!
+
+Współfinansowano ze środków otrzymanych od Samorządu Województwa Opolskiego. 
+Patronat honorowy: Marszałek Województwa Opolskiego Szymon Ogłaza.
+Patroni medialni: Radio Opole, Radio Doxa, TVP Opole, TVP Info, Nowa Trybuna Opolska
+Partnerzy: Dam Artysty w Głuchołazach, Fundacja Benevolens, Parafia św. Bartłomieja w Głogówku, Muzeum Regionalne w Głogówku, Sanktuarium św. Jacka w Kamieniu Śląskim Centrum Kultury i Nauki  Wydziału Teologicznego Uniwersytetu Opolskiego, Fundacja na rzecz Zamku Książęcego Niemodlin 1313
+
     `,
     link: "https://example.com",
     gallery: Jesien2Gallery,
