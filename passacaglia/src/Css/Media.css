@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 64px;
+  /* padding-bottom: 64px; */
   min-width: 1024px; /*usunąć jak coś żeby kontenet sie zmiejszał*/
 }
 #media_page h1 {
@@ -68,13 +68,12 @@
 }
 @media (max-width: 1024px) and (min-width: 769px) {
   #media_page {
-    min-width: 100%;
+    min-width: unset;
   }
 }
-@media (max-width: 1024px) and (min-width: 769px) {
-  #media_page {
-    min-width: 100%;
-  }
-}
+
 @media (max-width: 768px) {
+  #media_page {
+    min-width: unset;
+  }
 }

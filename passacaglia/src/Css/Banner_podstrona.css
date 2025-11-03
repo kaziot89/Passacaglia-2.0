@@ -1,0 +1,30 @@
+.banner_podstrona {
+  position: relative;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1440px;
+  aspect-ratio: 1440 / 385;
+  margin: auto;
+  overflow: hidden;
+}
+
+.banner_podstrona img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 🔻 Media query dla tabletów i telefonów */
+@media (max-width: 1024px) {
+  .banner_podstrona {
+    min-width: 100%;
+    aspect-ratio: 768 / 385;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner_podstrona {
+    aspect-ratio: 375 / 385;
+  }
+}

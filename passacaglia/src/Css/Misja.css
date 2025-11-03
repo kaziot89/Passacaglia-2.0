@@ -26,12 +26,34 @@ body {
   font-size: 26px;
 }
 #misja_page h3 {
+  position: relative; /* potrzebne dla absolutnego pseudo-elementu */
   margin: 32px 0 16px;
   font-family: Merriweather Sans;
   letter-spacing: 1px;
   font-size: 16px;
   line-height: 25px;
 }
+
+#misja_page h3::before {
+  content: "";
+  position: absolute; /* pozycjonowanie względem h3 */
+  left: -30px; /* przesunięcie znaczek na lewo od początku tekstu */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 24px;
+  background-image: url("../Pictures/Vector.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* opcjonalnie dla całego kontenera, aby tekst h3 i p był wyrównany do tej samej osi */
+#misja_container {
+  max-width: 685px;
+  padding-left: 0; /* upewnij się, że nie ma dodatkowego wcięcia */
+}
+
 #cele_container p {
   font-size: 14px;
   font-family: Merriweather Sans;
@@ -56,6 +78,16 @@ body {
 @media (max-width: 1024px) and (min-width: 769px) {
   #misja_page {
     min-width: 100%;
+  }
+  #misja_container {
+    max-width: 685px;
+  }
+}
+@media (max-width: 768px) {
+  #misja_page {
+    min-width: 80%;
+    max-width: 90%;
+    margin: 0 auto;
   }
   #misja_container {
     max-width: 90%;
