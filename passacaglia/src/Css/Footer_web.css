@@ -102,7 +102,9 @@
 
 .social-buttons {
   display: flex;
-  gap: 0.5rem;
+  width: 100%;
+  justify-content: space-around;
+  /* gap: 0.5rem; */
 }
 
 .social-icon {
@@ -118,7 +120,7 @@
   transition: background-color 0.3s;
 }
 
-@media (max-width: 1024px) and (min-width: 678px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   .footer {
     max-width: 768px;
     min-width: 100%;
@@ -155,10 +157,26 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .address-frame div {
+    position: relative;
+  }
 
+  .address-frame div::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    margin: 8px auto 0;
+  }
+
+  .address-frame div:last-of-type::after {
+    display: none;
+  }
   .address-frame {
     flex-direction: column;
-    gap: 16px;
+
     justify-content: center;
     align-items: center;
   }
@@ -185,18 +203,22 @@
     align-items: center;
     padding: 32px 24px;
     gap: 10px;
+    min-width: 100vw;
   }
 
   .footer-logo {
-    width: 123px;
-    height: 131px;
+    width: 163px;
+    height: 171px;
   }
 
   .address-frame {
     flex-direction: column;
     gap: 24px;
+    margin-bottom: 32px;
   }
-
+  .footer h4 {
+    line-height: 32px;
+  }
   .footer-support {
     flex-direction: column;
     align-items: center;
@@ -218,19 +240,36 @@
     line-height: 24px;
     text-align: center;
   }
+  .address-frame div {
+    position: relative;
+  }
+
+  .address-frame div::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    margin: 16px auto 0;
+  }
+
+  .address-frame div:last-of-type::after {
+    display: none;
+  }
 
   .social-buttons {
     gap: 12px;
   }
 
-  .support-button {
+  /* .support-button {
     width: 123px;
     height: 40px;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
-  .footer {
+  /* .footer {
     max-width: 375px;
     height: auto;
     flex-direction: column;
@@ -283,7 +322,7 @@
   .support-button {
     width: 123px;
     height: 40px;
-  }
+  } */
 }
 
 /*

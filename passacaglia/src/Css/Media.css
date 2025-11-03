@@ -71,3 +71,10 @@
     min-width: 100%;
   }
 }
+@media (max-width: 1024px) and (min-width: 769px) {
+  #media_page {
+    min-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+}

@@ -10,8 +10,8 @@ import projektyImg from "../Pictures/banner_projekty.jpg";
 import "../Css/Projekty.css";
 
 const Projekty = () => {
-  const aktualne = projektyData.filter(p => p.category === "aktualne");
-  const archiwalne = projektyData.filter(p => p.category === "archiwalne");
+  const aktualne = projektyData.filter((p) => p.category === "aktualne");
+  const archiwalne = projektyData.filter((p) => p.category === "archiwalne");
 
   return (
     <div>
@@ -22,9 +22,11 @@ const Projekty = () => {
 
       <div id="projekty_page">
         <section id="aktualne_projekty">
-          <h1>AKTUALNE PROJEKTY<div id="line"></div></h1>
+          <h1>
+            AKTUALNE PROJEKTY<div id="line"></div>
+          </h1>
           <div className="projekty_container_act">
-            {aktualne.map(projekt => (
+            {aktualne.map((projekt) => (
               <div key={projekt.id} className="projekty_item">
                 <div
                   className="projekty_photo"
@@ -34,7 +36,9 @@ const Projekty = () => {
                     to={`/projekty/${projekt.slug}`}
                     className="projekty_text_link projekty_text"
                   >
-                    <h5><i>{projekt.title}</i></h5>
+                    <h5>
+                      <i>{projekt.title}</i>
+                    </h5>
                   </Link>
                 </div>
               </div>
@@ -43,9 +47,11 @@ const Projekty = () => {
         </section>
 
         <section id="archiwalne_projekty">
-          <h1>ARCHIWALNE PROJEKTY<div id="line"></div></h1>
+          <h1>
+            ARCHIWALNE PROJEKTY<div id="line"></div>
+          </h1>
           <div className="projekty_container_arc">
-            {archiwalne.map(projekt => (
+            {archiwalne.map((projekt) => (
               <div key={projekt.id} className="projekty_item">
                 <div
                   className="projekty_photo"
@@ -55,7 +61,9 @@ const Projekty = () => {
                     to={`/projekty/${projekt.slug}`}
                     className="projekty_text_link projekty_text"
                   >
-                    <h5><i>{projekt.title}</i></h5>
+                    <h5>
+                      <i>{projekt.title}</i>
+                    </h5>
                   </Link>
                 </div>
               </div>

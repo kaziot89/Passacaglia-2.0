@@ -36,7 +36,7 @@ const Banner_HP_web = () => {
             inset: 0,
             backgroundImage: `url(${img})`,
             backgroundSize:
-              index === 1 ? "cover" : index === 2 ? "120% auto" : "cover",
+              index === 1 ? "cover" : index === 2 ? "cover" : "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             transition: "opacity 1s ease-in-out",
