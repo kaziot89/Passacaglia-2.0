@@ -9,6 +9,7 @@ import Aktualnosci from "./pages/Aktualnosci";
 import Wesprzyj from "./pages/Wesprzyj";
 import Kontakt from "./pages/Kontakt";
 import ScrollToTop from "./components/ScrollToTop";
+import News_page from "./pages/News_page";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="aktualnosci" element={<Aktualnosci />} />
         <Route path="wesprzyj" element={<Wesprzyj />} />
         <Route path="kontakt" element={<Kontakt />} />
+        <Route path="/aktualnosci/:id" element={<News_page />} />
       </Routes>
     </Router>
   );

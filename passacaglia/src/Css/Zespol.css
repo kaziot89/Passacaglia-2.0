@@ -69,3 +69,15 @@
     margin: 0 auto 48px;
   }
 }
+@media (max-width: 768px) {
+  #zespol_page {
+    width: 100%;
+    min-width: 100%;
+  }
+  .person_container {
+    flex-direction: column;
+  }
+  .picture {
+    margin: 0 auto 48px;
+  }
+}

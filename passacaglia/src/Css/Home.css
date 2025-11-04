@@ -111,35 +111,47 @@ a {
 /* ===============================
    SEKCJA AKTUALNOŚCI
 ================================= */
-#aktualnosci {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 1440px;
-  min-width: 1024px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #4a727b0a;
-  padding-bottom: 64px;
-}
-
 #aktualnosci_container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap; /* pozwala przejść do kolejnego wiersza, gdy zabraknie miejsca */
   gap: 24px;
+  justify-content: center;
   width: 90%;
   max-width: 1024px;
   margin: 0 auto;
+  align-items: center;
 }
 
+/* kafelek — ma max rozmiary, ale może się skurczyć równomiernie */
 .akt {
-  flex: 1;
-  aspect-ratio: 1 / 1;
+  box-sizing: border-box;
+  flex: 1 1 331px; /* flex-grow:1, flex-shrink:1, flex-basis:331px */
+  max-width: 331px; /* nie przekroczy 331px jeśli jest wystarczająco miejsca */
+  width: 100%; /* pozwala flex-basis działać poprawnie */
+  aspect-ratio: 331 / 337; /* lub 1 / 1 jeśli dokładnie kwadrat chcesz */
   background-color: white;
   box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* zdjęcie w kafelku */
+.akt_photo {
+  width: 100%;
+  /* height: 0;
+  padding-top: calc(
+    (337 / 331) * 100%
+  ); utrzymuje proporcje zdjęcia jeżeli nie używasz background-size */
+  background-size: cover;
+  background-position: center;
+}
+
+/* tekst na dole kafelka */
+.akt_text {
+  padding: 12px;
+  flex: 0 0 auto;
+  height: 115px; /* jeśli chcesz stałą wysokość tekstu */
 }
 
 /* ===============================
@@ -195,7 +207,10 @@ a {
   #misja_text {
     width: 90%;
   }
-
+  .akt {
+    /*  */
+    max-width: 331px;
+  }
   #owcip {
     width: 90%;
     margin: 48px auto;
@@ -242,6 +257,10 @@ a {
 
   #aktualnosci_container {
     flex-direction: column;
+  }
+
+  .akt {
+    /* max-width: 337px; */
   }
 
   #owcip {

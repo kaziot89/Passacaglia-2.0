@@ -33,6 +33,8 @@
 .akt_sub {
   flex: 1;
   height: auto;
+  max-height: 337px;
+  max-width: 331px;
   aspect-ratio: 1 / 1;
   background-color: white;
   box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.2);
@@ -82,7 +84,7 @@
 /* #aktualnosci {
   aspect-ratio: none;
 } */
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) {
   #aktualnosci_sub {
     max-width: 100%;
     min-width: 100%;
@@ -110,4 +112,6 @@
     content: "";
     flex: 0 0 330px;
   }
+}
+@media (max-width: 768px) {
 }

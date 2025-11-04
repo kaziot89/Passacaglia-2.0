@@ -1,15 +1,36 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 import Banner_HP_web from "../components/Banner_HP_web";
-import Menu_Web from "../components/Menu_web";
-import Menu_Mobile from "../components/Menu_Mobile";
-import Logo_web from "../components/Logo_web";
-import More_button from "../components/More_button";
 import Footer from "../components/Footer_web";
+import Logo_web from "../components/Logo_web";
+import Menu_Mobile from "../components/Menu_Mobile";
+import Menu_Web from "../components/Menu_web";
+import More_button from "../components/More_button";
 // importy obrazków
 import herb from "../Pictures/herb.png";
 import owcip from "../Pictures/owcip.png";
 
+import { aktualnosciData } from "./Aktualnosci"; // import danych aktualności
+
+// import "../Css/Aktualnosci.css"; // styl dla kafelków MOZLIWE DO PRZYWRócenia
+
+// Komponent pojedynczego kafelka na stronie głównej
+const NewsCardHome = ({ id, title, date, img }) => (
+  <div className="akt">
+    <div className="akt_photo" style={{ backgroundImage: `url(${img})` }}></div>
+    <div className="akt_text">
+      <h5>{date}</h5>
+      <p>
+        <NavLink to={`/aktualnosci/${id}`} className="media_text_link">
+          {title}
+        </NavLink>
+      </p>
+    </div>
+  </div>
+);
+
 const Home = () => {
+  const latestNews = aktualnosciData.slice(-3).reverse();
+
   return (
     <div>
       <Logo_web />
@@ -62,11 +83,11 @@ const Home = () => {
           AKTUALNOŚCI<div id="line"></div>
         </h1>
         <div id="aktualnosci_container">
-          <div className="akt"></div>
-          <div className="akt"></div>
-          <div className="akt"></div>
+          {latestNews.map((news) => (
+            <NewsCardHome key={news.id} {...news} />
+          ))}
         </div>
-        <More_button />
+        <More_button to="/aktualnosci" />
       </div>
 
       <div id="owcip">
@@ -75,10 +96,10 @@ const Home = () => {
         </div>
         <div id="owcip_text">
           <p>
-            Budowę strony sfinansowano ze środków pochodzących z dotacji
-            Opolskiego Centrum Wspierania Inicjatyw Pozarządowych <br></br>w
-            ramach konkursu „Silne NGO 25” umowa nr 5/2025/SN, finansowanego ze
-            środków Urzędu Miasta Opola <br></br> na podstawie umowy
+            Budowę strony  sfinansowano  ze środków pochodzących z dotacji
+            Opolskiego Centrum Wspierania Inicjatyw Pozarządowych   w ramach
+            konkursu „Silne NGO 25” umowa nr 5/2025/SN, finansowanego ze
+            środków  Urzędu Miasta Opola  na podstawie umowy 
             CDO-RIPS.526.6.1.2025 z dnia 11.03.2025.
           </p>
         </div>
@@ -86,6 +107,7 @@ const Home = () => {
           <img src={owcip} alt="Logo" />
         </div>
       </div>
+
       <Footer />
     </div>
   );
