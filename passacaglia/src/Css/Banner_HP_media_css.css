@@ -5,11 +5,18 @@
   aspect-ratio: 1440 / 750;
   margin: 0 auto;
   overflow: hidden;
+  z-index: 0; /* banner jest niżej */
 }
 
 @media (max-width: 1024px) and (min-width: 678px) {
   .banner-container {
     max-width: 1024px;
     aspect-ratio: 750 / 786;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-container {
+    aspect-ratio: 375 / 700; /* Twój wcześniejszy wariant */
   }
 }
