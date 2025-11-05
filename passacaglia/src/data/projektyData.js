@@ -1,12 +1,15 @@
+import slyszalnyKrajobraz from "../Pictures/krajobraz.jpg";
+import nocMuzeow from "../Pictures/nocMuzeow.jpg";
+import barokowyPiatek from "../Pictures/barokowyPiatek.png";
+
 const Jesien2Images = import.meta.glob("../Pictures/Jesien2/**/*", {
   eager: true,
 });
-// const Jesien2Gallery = Object.values(Jesien2Images).map((img) => img.default);
 
 const Jesien2Gallery = {};
 
 for (const path in Jesien2Images) {
-  const cityMatch = path.match(/Jesien2\/([^/]+)\//); // wyłapuje nazwę folderu np. "Kamień"
+  const cityMatch = path.match(/Jesien2\/([^/]+)\//);
   if (cityMatch) {
     const city = cityMatch[1];
     if (!Jesien2Gallery[city]) Jesien2Gallery[city] = [];
@@ -77,10 +80,11 @@ Partnerzy: Dam Artysty w Głuchołazach, Fundacja Benevolens, Parafia św. Bart�
   {
     id: 4,
     slug: "slyszalny-krajobraz",
+    shortTitle: "Słyszalny krajobraz",
     title:
       "Przestrzeń poza czasem – słyszalny krajobraz.  Sonata fortepianowa i pejzaż u progu romantyzmu na przykładzie dzieł C. D. Friedricha i F. Schuberta",
     category: "archiwalne",
-    image: PrzestrzenGallery[0],
+    image: slyszalnyKrajobraz,
     description: `
       24.10.2024 o godz. 18.30 w Muzeum Diecezjalnym w Opolu odbył się wykład Joanny Owczarek- Ciszewskiej na temat analogii w twórczości malarza Caspara Davida Friedricha oraz kompozytora Franciszka Schuberta. Po wykładzie miał miejsce koncert na fortepianie historycznym z lat 20. XiX wieku, podczas którego zabrzmiała Sonata-Fantazja G-dur op. 78 F. Schuberta w wykonaniu prelegentki. Wykład był współorganizowany przez Fundację wraz z Muzeum Diecezjalnym w ramach cyklu jesiennych wykładów „Caspar David Friedrich w dialogu sztuk”, poświęconych życiu i twórczości artysty.
     `,
@@ -110,7 +114,7 @@ Partnerzy: Muzeum Regionalne w Głogówku, Parafia św. Bartłomieja w Głogówk
     slug: "noc-muzeow",
     title: "Noc Muzeów 2024",
     category: "archiwalne",
-    image: musNightGallery[0],
+    image: nocMuzeow,
     description: `
       Wspólnie z Muzeum Diecezjalnym w Opolu oraz Państwową Szkołą Muzyczną I i II st. im. F. Chopina  w dniu 18.05.2024 zorganizowaliśmy koncert pod tytułem „Muzyka dawna otulona sztuką”. Wydarzenie odbyło się w ramach 16. Nocy Muzeów - „Pod gwiazdami Europy”. Koncert z muzyką A. Vivaldiego, J. Melaniego, Ch. Dieuparta i J. S. Bacha został wykonany wspólnie z uczniami oraz absolwentami PSM I i II stopnia w Opolu w Muzeum Diecezjalnym. Projekt był dla nas szczególny ze względu na syntezę sztuki z muzyką, oraz integrację środowisk artystycznych miasta Opola.
     `,
@@ -122,7 +126,7 @@ Partnerzy: Muzeum Regionalne w Głogówku, Parafia św. Bartłomieja w Głogówk
     slug: "barokowy-piatek",
     title: "Barokowy piątek w centrum TRISO",
     category: "archiwalne",
-    image: trisoGallery[0],
+    image: barokowyPiatek,
     description: `
       8.05.2024 na zaproszenie Opolskiego Stowarzyszenia na Rzecz Rozwoju Dzieci z Trisomią 21 odbył się organizowany przez naszą Fundację koncert muzyki dawnej dla dzieci i młodzieży w Centrum Aktywności i Rehabilitacji TRISO w Opolu. Wystąpiły: Monika Targowska – flet traverso, Joanna Owczarek-Ciszewska – klawesyn, oraz Agata Wachowska – prowadzenie. Oprócz zaprezentowania tańców barokowych, porozmawialiśmy o historii, kulturze i sztuce baroku. Dzieci bardzo aktywnie uczestniczyły w spotkaniu, tańcząc, dyskutując i próbując gry na klawesynie. Projekt był ważnym elementem działalności edukacyjnej Fundacji Passacaglia, propagującej integrację i promocję muzyki dawnej w środowiskach zagrożonych wykluczeniem. 
     `,

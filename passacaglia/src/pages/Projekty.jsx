@@ -37,7 +37,7 @@ const Projekty = () => {
                     className="projekty_text_link projekty_text"
                   >
                     <h5>
-                      <i>{projekt.title}</i>
+                      <i>{projekt.shortTitle || projekt.title}</i>
                     </h5>
                   </Link>
                 </div>
@@ -62,7 +62,7 @@ const Projekty = () => {
                     className="projekty_text_link projekty_text"
                   >
                     <h5>
-                      <i>{projekt.title}</i>
+                      <i>{projekt.shortTitle || projekt.title}</i>
                     </h5>
                   </Link>
                 </div>

@@ -49,14 +49,14 @@ const Media = () => {
               </p>
             </div>
           </div>
-          <div class="media_item">
+          <div className="media_item">
             <div
               className="media_photo"
               style={{
                 backgroundImage: `url(${radioopole})`,
               }}
             ></div>
-            <div class="media_text">
+            <div className="media_text">
               <h5>RADIO OPOLE</h5>
               <p>
                 <a
@@ -70,7 +70,7 @@ const Media = () => {
               </p>
             </div>
           </div>
-          <div class="media_item">
+          <div className="media_item">
             <div
               className="media_photo"
               style={{
@@ -80,7 +80,7 @@ const Media = () => {
                 backgroundPosition: "center",
               }}
             ></div>
-            <div class="media_text">
+            <div className="media_text">
               <h5>KLASYKA NA KAŻDĄ PORĘ</h5>
               <p>
                 <a
@@ -95,14 +95,14 @@ const Media = () => {
               </p>
             </div>
           </div>
-          <div class="media_item">
+          <div className="media_item">
             <div
               className="media_photo"
               style={{
                 backgroundImage: `url(${nto})`,
               }}
             ></div>
-            <div class="media_text">
+            <div className="media_text">
               <h5>NOWA TRYBUNA OPOLSKA</h5>
               <p>
                 <a
@@ -138,14 +138,14 @@ const Media = () => {
               </p>
             </div>
           </div>
-          <div class="media_item">
+          <div className="media_item">
             <div
               className="media_photo"
               style={{
                 backgroundImage: `url(${doxa})`,
               }}
             ></div>
-            <div class="media_text">
+            <div className="media_text">
               <h5>RADIO DOXA</h5>
               <p>
                 <a

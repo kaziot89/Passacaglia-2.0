@@ -5,15 +5,10 @@ import Logo_web from "../components/Logo_web";
 import Menu_Mobile from "../components/Menu_Mobile";
 import Menu_Web from "../components/Menu_web";
 import More_button from "../components/More_button";
-// importy obrazków
 import herb from "../Pictures/herb.png";
 import owcip from "../Pictures/owcip.png";
 
-import { aktualnosciData } from "./Aktualnosci"; // import danych aktualności
-
-// import "../Css/Aktualnosci.css"; // styl dla kafelków MOZLIWE DO PRZYWRócenia
-
-// Komponent pojedynczego kafelka na stronie głównej
+import { aktualnosciData } from "./Aktualnosci";
 const NewsCardHome = ({ id, title, date, img }) => (
   <div className="akt">
     <div className="akt_photo" style={{ backgroundImage: `url(${img})` }}></div>
@@ -96,10 +91,10 @@ const Home = () => {
         </div>
         <div id="owcip_text">
           <p>
-            Budowę strony  sfinansowano  ze środków pochodzących z dotacji
-            Opolskiego Centrum Wspierania Inicjatyw Pozarządowych   w ramach
+            Budowę strony sfinansowano ze środków pochodzących z dotacji
+            Opolskiego Centrum Wspierania Inicjatyw Pozarządowych w ramach
             konkursu „Silne NGO 25” umowa nr 5/2025/SN, finansowanego ze
-            środków  Urzędu Miasta Opola  na podstawie umowy 
+            środków Urzędu Miasta Opola na podstawie umowy
             CDO-RIPS.526.6.1.2025 z dnia 11.03.2025.
           </p>
         </div>
