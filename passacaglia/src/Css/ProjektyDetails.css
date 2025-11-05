@@ -21,7 +21,6 @@ body {
   line-height: 55px;
   letter-spacing: 0;
   max-width: 685px;
-  height: 55px;
   gap: 8px;
   opacity: 1;
 }
@@ -43,7 +42,8 @@ body {
 }
 
 .projekt-image {
-  width: 100%;
+  width: auto;
+  max-width: 685px;
   max-height: 450px;
   border-radius: 12px;
   margin-bottom: 20px;
