@@ -144,7 +144,7 @@ const Menu_Web = () => {
         <img
           src={zoomIn}
           alt="Powiększ"
-          style={{ width: "24px", height: "24px" }}
+          style={{ width: "16px", height: "16px" }}
         />
       </button>
     </div>

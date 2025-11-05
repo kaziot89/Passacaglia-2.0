@@ -21,8 +21,10 @@ body {
   line-height: 55px;
   letter-spacing: 0;
   max-width: 685px;
+  margin-bottom: 40px;
   gap: 8px;
   opacity: 1;
+  text-align: left;
 }
 
 .projekt-details {
@@ -37,7 +39,7 @@ body {
   font-size: 26px;
   line-height: 27px;
   letter-spacing: 0;
-  padding-top: 28px;
+  padding-top: 40px;
   color: #4a727b;
 }
 
@@ -45,8 +47,7 @@ body {
   width: auto;
   max-width: 685px;
   max-height: 450px;
-  border-radius: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .projekt-info {

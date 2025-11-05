@@ -3,7 +3,16 @@
   position: relative;
   z-index: 1000;
 }
-
+#icons {
+  display: flex;
+  height: 30px;
+  justify-content: space-evenly;
+  width: 100px;
+}
+/* #icons button img {
+  min-height: 20px;
+  min-width: 20px;
+} */
 @media (max-width: 1024px) {
   .menu_mobile {
     display: flex;
@@ -17,21 +26,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 24px;
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
+    margin-right: 12px;
   }
 
   .hamburger span {
     display: block;
-    height: 4px;
+    height: 3px;
     width: 100%;
     background-color: black;
-    border-radius: 2px;
-    margin: 4px 0;
+
+    margin: 2px 0;
     transition: transform 0.2s ease;
   }
 
@@ -90,13 +100,13 @@
 
   .closeButton {
     position: absolute;
-    top: 12px;
-    right: 24px;
-    font-size: 3rem;
+    top: 15px;
+    right: 28px;
+    font-size: 38px;
     background: none;
     border: none;
     cursor: pointer;
-    color: #4a727b;
+    color: black;
   }
   .mobileLinks a {
     text-decoration: none;

@@ -36,7 +36,12 @@ body {
   font-size: 16px;
   line-height: 25px;
 }
-
+#aktualne_projekty {
+  min-width: 100%;
+}
+#archiwalne_projekty {
+  margin-bottom: 64px;
+}
 #projekty_aktualne_section,
 #projekty_archiwalne_section {
   width: 100%;
@@ -50,7 +55,7 @@ body {
 .projekty_container_arc {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 24px;
 
   width: 100%;

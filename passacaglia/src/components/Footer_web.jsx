@@ -13,13 +13,13 @@ const Footer = () => {
         <div
           className="footer-logo"
           style={{ backgroundImage: `url(${logo})` }}
-          role="img" 
+          role="img"
           aria-label="Logo Fundacji Passacaglia"
         />
       </Link>
 
       <address className="footer-address">
-        <h4>Fundacja Promocji Muzyki Dawnej "Passacaglia"</h4>
+        <h4>Fundacja Promocji Muzyki Dawnej „Passacaglia”</h4>
         <div className="address-frame">
           <div>
             <p>ul. Kościuszki 13/6</p>
@@ -45,12 +45,12 @@ const Footer = () => {
 
       <div className="footer-support">
         <NavLink
-                id="wesprzyjButton"
-                to="/wesprzyj"
-                className={({ isActive }) => (isActive ? "activeLink" : "")}
-              >
-                WESPRZYJ
-              </NavLink>
+          id="wesprzyjButton"
+          to="/wesprzyj"
+          className={({ isActive }) => (isActive ? "activeLink" : "")}
+        >
+          WESPRZYJ
+        </NavLink>
         {/* <button className="support-button">WESPRZYJ</button> */}
 
         <div className="social-buttons">
