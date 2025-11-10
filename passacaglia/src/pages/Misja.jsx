@@ -41,8 +41,16 @@ const Misja = () => {
             syntetyzujących różne dziedziny sztuki i nauki z muzyką.
           </p>
           <div className="button_container">
-            <button className="oval_button">POBIERZ STATUT</button>
-            <button className="oval_button">POBIERZ LOGOTYPY</button>
+            <a href="Documents/Statut.docx" download className="oval_button">
+              POBIERZ STATUT
+            </a>
+            <a
+              href="Documents/Passacaglia_logotyp.pdf"
+              download
+              className="oval_button"
+            >
+              POBIERZ LOGOTYP
+            </a>
           </div>
           <div id="cele_container">
             <h2>Fundacja realizuje swoje cele poprzez:</h2>
