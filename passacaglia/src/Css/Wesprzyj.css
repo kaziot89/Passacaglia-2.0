@@ -60,6 +60,7 @@
   margin: 22px 0;
   height: 202px;
 }
+
 #tax_container {
   height: 282px;
 }
@@ -68,11 +69,34 @@
 #tax_info {
   text-align: center;
 }
+#patron_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#patron_info a {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #4a727b;
+  margin-left: 8px;
+}
 #tax_container p {
   font-family: Merriweather Sans;
   color: #4a727b;
   font-size: 14px;
   line-height: 24px;
+}
+#mlodzi_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+#mlodzi_info a {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #4a727b;
+  margin-left: 8px;
 }
 @media (max-width: 1024px) {
   #wesprzyj {

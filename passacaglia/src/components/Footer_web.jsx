@@ -31,8 +31,14 @@ const Footer = () => {
             <a
               href="mailto:fundacjapassacaglia@gmail.com"
               aria-label="Wyślij wiadomość e-mail do działu kontaktu"
+              style={{
+                fontFamily: "Merriweather Sans",
+                fontWeight: "400", // domyślny font-weight
+                letterSpacing: "1px", // domyślne odstępy między literami
+                textDecoration: "underline",
+              }}
             >
-              email: fundacjapassacaglia@gmail.com
+              fundacjapassacaglia@gmail.com
             </a>
           </div>
           <div className="divider" />

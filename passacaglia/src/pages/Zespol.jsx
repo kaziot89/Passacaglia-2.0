@@ -69,7 +69,7 @@ const Zespol = () => {
               <h4>WICEPREZES ZARZĄDU</h4>
               <p>
                 Flecistka, ukończyła dwa kierunki studiów w Akademii Muzycznej w
-                Łodzi i we Wrocławiu, stypendium w Hochschule fur Musik und
+                Łodzi i we Wrocławiu, stypendium w Hochschule für Musik und
                 Theater w Hanowerze oraz studia podyplomowe z dziennikarstwa
                 muzycznego w Collegium Civitas w Warszawie. Uczestniczyła w
                 wielu kursach i konkursach fletowych. Od 2006 roku związana z
@@ -80,7 +80,7 @@ const Zespol = () => {
                 kameralistów barokowych Sanssouci. Od wielu lat prowadzi klasy
                 fletu w szkołach muzycznych I stopnia, w których aktywnie
                 propaguje muzykę dawną. Publikuje teksty poświęcone muzyce i
-                edukacji, m.in. w kwartalniku Szkoła artystyczna oraz w
+                edukacji, m.in. w kwartalniku "Szkoła artystyczna" oraz w
                 internetowym magazynie meakultura.pl. Współautorka innowacji
                 edukacyjnej „Instrumentownik” wydanej przez Fundację Meakultura.
                 W 2021 roku otrzymała nagrodę Centrum Edukacji Artystycznej, a w

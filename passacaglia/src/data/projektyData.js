@@ -86,7 +86,7 @@ Partnerzy: Dam Artysty w Głuchołazach, Fundacja Benevolens, Parafia św. Bart�
     category: "archiwalne",
     image: slyszalnyKrajobraz,
     description: `
-      24.10.2024 o godz. 18.30 w Muzeum Diecezjalnym w Opolu odbył się wykład Joanny Owczarek- Ciszewskiej na temat analogii w twórczości malarza Caspara Davida Friedricha oraz kompozytora Franciszka Schuberta. Po wykładzie miał miejsce koncert na fortepianie historycznym z lat 20. XiX wieku, podczas którego zabrzmiała Sonata-Fantazja G-dur op. 78 F. Schuberta w wykonaniu prelegentki. Wykład był współorganizowany przez Fundację wraz z Muzeum Diecezjalnym w ramach cyklu jesiennych wykładów „Caspar David Friedrich w dialogu sztuk”, poświęconych życiu i twórczości artysty.
+      24.10.2024 o godz. 18.30 w Muzeum Diecezjalnym w Opolu odbył się wykład Joanny Owczarek- Ciszewskiej na temat analogii w twórczości malarza Caspara Davida Friedricha oraz kompozytora Franciszka Schuberta. Po wykładzie miał miejsce koncert na fortepianie historycznym z lat 20. XIX wieku, podczas którego zabrzmiała Sonata-Fantazja G-dur op. 78 F. Schuberta w wykonaniu prelegentki. Wykład był współorganizowany przez Fundację wraz z Muzeum Diecezjalnym w ramach cyklu jesiennych wykładów „Caspar David Friedrich w dialogu sztuk”, poświęconych życiu i twórczości artysty.
     `,
     link: "https://example.com",
     gallery: PrzestrzenGallery,

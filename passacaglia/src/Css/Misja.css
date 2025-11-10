@@ -88,9 +88,7 @@ body {
     max-width: 90%;
     margin: 0 auto;
   }
-  #misja_page h3::before {
-    background-image: url("../Pictures/Vector2.png");
-  }
+
   #misja_container {
     max-width: 90%;
   }

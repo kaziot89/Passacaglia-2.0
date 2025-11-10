@@ -5,6 +5,8 @@ import Menu_Web from "../components/Menu_web";
 import Menu_Mobile from "../components/Menu_Mobile";
 import wesprzyjImg from "../Pictures/wspracie.jpg";
 import Footer from "../components/Footer_web";
+import PatroniteLogo from "../Pictures/PatroniteLogo.png";
+import MlodziLogo from "../Pictures/MlodziLogo.png";
 
 import "../Css/Wesprzyj.css";
 
@@ -61,8 +63,15 @@ const Wesprzyj = () => {
             </div>
           </div>
           <div id="patron_container">
-            <h3>Zostań patronem Fundacji w serwisie Patronite </h3>
-            <div id="parton_info">
+            <h3>
+              Zostań patronem Fundacji <br />w serwisie Patronite{" "}
+            </h3>
+            <div id="patron_info">
+              <img
+                src={PatroniteLogo}
+                alt="Patronite Logo"
+                style={{ width: "40px", height: "40px" }}
+              />
               <a href="https://www.patronite.pl/passacaglia">Zobacz profil</a>
             </div>
           </div>
@@ -82,7 +91,17 @@ const Wesprzyj = () => {
               <p style={{ marginTop: "8px" }}>
                 Numer konta: 35 2030 0045 1110 0000 0382 5640
               </p>
-              <a href="https://fsmm.pl/partner/fundacja-promocji-muzyki-dawnej-passacaglia/">Zobacz profil</a>
+              <div id="mlodzi_info">
+                <img
+                  src={MlodziLogo}
+                  alt="Młodzi Młodym Logo"
+                  style={{ width: "48px", height: "24px" }}
+                />
+
+                <a href="https://fsmm.pl/partner/fundacja-promocji-muzyki-dawnej-passacaglia/">
+                  Zobacz profil
+                </a>
+              </div>
             </div>
           </div>
         </div>
