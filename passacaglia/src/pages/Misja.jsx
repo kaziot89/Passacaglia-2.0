@@ -41,13 +41,17 @@ const Misja = () => {
             syntetyzujących różne dziedziny sztuki i nauki z muzyką.
           </p>
           <div className="button_container">
-            <a href="Documents/Statut.docx" download className="oval_button">
+            <a
+              href="Documents/Statut.docx"
+              download
+              className="download_button"
+            >
               POBIERZ STATUT
             </a>
             <a
               href="Documents/Passacaglia_logotyp.pdf"
               download
-              className="oval_button"
+              className="download_button"
             >
               POBIERZ LOGOTYP
             </a>
