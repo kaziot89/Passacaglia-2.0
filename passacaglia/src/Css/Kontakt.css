@@ -23,6 +23,9 @@
   color: #4a727b;
   line-height: 22px;
   width: 328px;
+  margin: 0 auto;
+  text-align: center;
+  /* wersja bez formularza */
 }
 .contact-info p {
   line-height: 22px;

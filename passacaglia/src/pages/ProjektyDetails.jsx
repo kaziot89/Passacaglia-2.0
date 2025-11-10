@@ -12,14 +12,13 @@ import "../Css/ProjektyDetails.css";
 
 const ProjektyDetails = () => {
   const { slug } = useParams();
-  const projekt = projektyData.find(p => p.slug === slug);
+  const projekt = projektyData.find((p) => p.slug === slug);
 
   if (!projekt) {
     return <div className="projekt-not-found">Nie znaleziono projektu.</div>;
   }
 
   return (
-
     <div>
       <Logo_web />
       <Menu_Web />
@@ -28,20 +27,24 @@ const ProjektyDetails = () => {
       <div className="projekt-details-page">
         <div className="projekt-title">{projekt.title}</div>
         <div className="projekt-details">
-            <img src={projekt.image} alt={projekt.title} className="projekt-image" />
-            <div className="projekt-info">
+          <img
+            src={projekt.image}
+            alt={projekt.title}
+            className="projekt-image"
+          />
+          <div className="projekt-info">
             {/* <h1>{projekt.title}</h1> */}
             <p>{projekt.description}</p>
             {/* <a href={projekt.link} target="_blank" rel="noopener noreferrer" className="projekty_btn">
             Odwiedź stronę projektu
             </a> */}
-              <h3>Galeria zdjęć:</h3>
-              <ProjektGallery gallery={projekt.gallery} title={projekt.title} />
-      
+            <h3>Galeria zdjęć:</h3>
+            <ProjektGallery gallery={projekt.gallery} title={projekt.title} />
+
             <Link to="/projekty" className="projekty_back_link">
-            ← Powrót do listy projektów
+              ← Powrót do listy projektów
             </Link>
-            </div>
+          </div>
         </div>
       </div>
       <Footer />

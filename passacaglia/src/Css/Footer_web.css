@@ -135,7 +135,9 @@
     margin: 0 auto;
     position: relative;
   }
-
+  .social-buttons {
+    width: 90%;
+  }
   .footer-logo {
     width: 123px;
     height: 131px;

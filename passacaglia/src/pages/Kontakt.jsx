@@ -56,7 +56,7 @@ const Kontakt = () => {
           </div>
 
           {/* Prawa kolumna – formularz */}
-          <form className="contact-form">
+          {/* <form className="contact-form">
             <input type="text" name="name" placeholder="   Imię i nazwisko" />
             <input type="email" name="email" placeholder="   Twój e-mail" />
             <textarea
@@ -82,7 +82,7 @@ const Kontakt = () => {
                 WYŚLIJ
               </button>
             </div>
-          </form>
+          </form> */}
         </div>
       </div>
       <Footer />
