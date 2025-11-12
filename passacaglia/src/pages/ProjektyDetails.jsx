@@ -34,7 +34,15 @@ const ProjektyDetails = () => {
           />
           <div className="projekt-info">
             {/* <h1>{projekt.title}</h1> */}
-            <p>{projekt.description}</p>
+            <div className="projekt-description">
+              {projekt.description
+                .trim()
+                .split(/\n\s*\n/)
+                .map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+            </div>
+
             {/* <a href={projekt.link} target="_blank" rel="noopener noreferrer" className="projekty_btn">
             Odwiedź stronę projektu
             </a> */}

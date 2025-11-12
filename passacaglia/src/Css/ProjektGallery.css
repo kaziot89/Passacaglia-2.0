@@ -110,3 +110,22 @@
   margin: 0 auto;
   justify-items: center;
 }
+@media (max-width: 768px) {
+  .gallery-city-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ✅ dwie kolumny */
+    gap: 12px;
+
+    margin: 0 auto;
+  }
+
+  .photogallery-img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* ✅ zachowuje kwadrat */
+    height: auto;
+    object-fit: cover;
+  }
+  .projekt-details-page {
+    padding: 0 12px;
+  }
+}

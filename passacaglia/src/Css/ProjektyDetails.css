@@ -45,9 +45,14 @@ body {
 
 .projekt-image {
   width: auto;
-  max-width: 685px;
+  max-width: 100%;
   max-height: 450px;
   margin-bottom: 32px;
+}
+
+.projekt-description p {
+  margin: 0 0 1em 0;
+  line-height: 1.6;
 }
 
 .projekt-info {
@@ -86,12 +91,27 @@ body {
   color: black;
 }
 @media (max-width: 1024px) {
-  .projekt-details-page {
-    padding: 0 8px;
+  .projekty_back_link {
+    margin-bottom: 0;
+  }
+  .projekt-title {
+    margin-top: 40px;
   }
 }
 @media (max-width: 768px) {
+  .projekt-details,
   .projekt-details-page {
-    padding: 0 8px;
+    max-width: 100%;
+    /* padding: 0 12px; */
+  }
+  .projekt-title {
+    margin-top: 40px;
+  }
+  .projekty_back_link {
+    margin-bottom: 0;
+  }
+  .projekt-image {
+    width: 100vw;
+    height: auto;
   }
 }

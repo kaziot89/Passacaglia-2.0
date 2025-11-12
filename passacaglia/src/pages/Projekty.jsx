@@ -30,7 +30,7 @@ const Projekty = () => {
               <div key={projekt.id} className="projekty_item">
                 <div
                   className="projekty_photo"
-                  style={{ backgroundImage: `url(${projekt.image})` }}
+                  style={{ backgroundImage: `url(${projekt.miniature})` }}
                 >
                   <Link
                     to={`/projekty/${projekt.slug}`}
@@ -55,7 +55,7 @@ const Projekty = () => {
               <div key={projekt.id} className="projekty_item">
                 <div
                   className="projekty_photo"
-                  style={{ backgroundImage: `url(${projekt.image})` }}
+                  style={{ backgroundImage: `url(${projekt.miniature})` }}
                 >
                   <Link
                     to={`/projekty/${projekt.slug}`}
