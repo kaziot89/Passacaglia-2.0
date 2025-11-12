@@ -1,7 +1,3 @@
-import slyszalnyKrajobraz from "../Pictures/krajobraz.jpg";
-import nocMuzeow from "../Pictures/nocMuzeow.jpg";
-import barokowyPiatek from "../Pictures/barokowyPiatek.png";
-
 const Jesien2Images = import.meta.glob("../Pictures/Jesien2/**/*", {
   eager: true,
 });
