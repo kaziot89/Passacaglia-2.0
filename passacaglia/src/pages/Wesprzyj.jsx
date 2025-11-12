@@ -1,9 +1,11 @@
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Banner_podstrona from "../components/Banner_podstrona";
 import Logo_web from "../components/Logo_web";
 import Menu_Web from "../components/Menu_web";
 import Menu_Mobile from "../components/Menu_Mobile";
 import wesprzyjImg from "../Pictures/wspracie.jpg";
+import malyWesprzyjImg from "../Pictures/wspracie_mobile.png"; // <-- nowy obraz
 import Footer from "../components/Footer_web";
 import PatroniteLogo from "../Pictures/PatroniteLogo.png";
 import MlodziLogo from "../Pictures/MlodziLogo.png";
@@ -11,12 +13,24 @@ import MlodziLogo from "../Pictures/MlodziLogo.png";
 import "../Css/Wesprzyj.css";
 
 const Wesprzyj = () => {
+  const [bannerImage, setBannerImage] = useState(wesprzyjImg);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setBannerImage(window.innerWidth <= 786 ? malyWesprzyjImg : wesprzyjImg);
+    };
+
+    handleResize(); // ustawienie początkowe
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div>
       <Logo_web />
       <Menu_Web />
       <Menu_Mobile />
-      <Banner_podstrona image={wesprzyjImg} objectPosition="center 0%" />
+      <Banner_podstrona image={bannerImage} objectPosition="center 0%" />
       <div id="wesprzyj">
         <h1>
           WESPRZYJ NAS<div id="line"></div>

@@ -4,6 +4,7 @@ import Logo_web from "../components/Logo_web";
 import Menu_Web from "../components/Menu_web";
 import Menu_Mobile from "../components/Menu_Mobile";
 import kontaktImg from "../Pictures/kontakt.jpg";
+import malyKontaktImg from "../Pictures/kontakt_mob.png"; // <-- nowy obraz
 import Footer from "../components/Footer_web";
 
 import "../Css/Kontakt.css";

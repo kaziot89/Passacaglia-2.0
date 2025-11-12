@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { projektyData } from "../data/projektyData";
@@ -7,18 +8,38 @@ import Menu_Mobile from "../components/Menu_Mobile";
 import Banner_podstrona from "../components/Banner_podstrona";
 import Footer from "../components/Footer_web";
 import projektyImg from "../Pictures/banner_projekty.jpg";
+import sredniProjektyImg from "../Pictures/projekty_tab.png";
+import malyProjektyImg from "../Pictures/projekty_mob.png";
 import "../Css/Projekty.css";
 
 const Projekty = () => {
   const aktualne = projektyData.filter((p) => p.category === "aktualne");
   const archiwalne = projektyData.filter((p) => p.category === "archiwalne");
 
+  const [bannerImage, setBannerImage] = useState(projektyImg);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 786) {
+        setBannerImage(malyProjektyImg); // mobilne
+      } else if (window.innerWidth <= 1024) {
+        setBannerImage(sredniProjektyImg); // tablet / średnie ekrany
+      } else {
+        setBannerImage(projektyImg); // duże ekrany
+      }
+    };
+
+    handleResize(); // ustawienie początkowe
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div>
       <Logo_web />
       <Menu_Web />
       <Menu_Mobile />
-      <Banner_podstrona image={projektyImg} objectPosition="center 21%" />
+      <Banner_podstrona image={bannerImage} objectPosition="center 21%" />
 
       <div id="projekty_page">
         <section id="aktualne_projekty">
