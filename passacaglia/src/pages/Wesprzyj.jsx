@@ -16,7 +16,7 @@ const Wesprzyj = () => {
       <Logo_web />
       <Menu_Web />
       <Menu_Mobile />
-      <Banner_podstrona image={wesprzyjImg} objectPosition="center 10%" />
+      <Banner_podstrona image={wesprzyjImg} objectPosition="center 0%" />
       <div id="wesprzyj">
         <h1>
           WESPRZYJ NAS<div id="line"></div>
