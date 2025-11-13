@@ -1,120 +1,202 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  width: fit-content;
-  margin: 0 auto;
-}
-body {
-  max-width: 1440px;
-  margin: auto;
-}
-a,
-button {
-  font-family: "Merriweather", serif;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-}
-a {
-  color: black;
-  text-decoration: none;
-}
-#misja {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 64px;
+/* 🔥 Tryb wysokiego kontrastu */
+body.high-contrast {
+  background-color: #000 !important;
+  color: #fff !important;
 }
 
-#misja h1,
-#aktualnosci h1 {
-  margin: 64px 0;
-  font-family: "Merriweather", serif;
-  color: #4a727b;
-  letter-spacing: 2px;
-  font-size: 40px;
-}
-#line {
-  height: 3px;
-  width: 150px;
-  background-color: #bc7f79;
-  margin: 16px auto;
-}
-#misja div h2 {
-  color: #bc7f79;
-  margin-bottom: 32px;
-  font-family: "Merriweather", serif;
-  line-height: 36px;
-  font-size: 22px;
+/* Wszystkie kontenery */
+body.high-contrast div {
+  background-color: #000 !important;
+  color: #fff !important;
 }
 
-#misja_text {
-  width: 685px;
-  font-size: 16px;
-  color: black;
-  font-family: Merriweather Sans;
-  line-height: 28px;
-}
-#aktualnosci {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 64px;
-  width: 100%;
-  height: 689px;
-  text-align: center;
-  margin: 0 auto;
-  background-color: #4a727b0a;
+/* Nagłówki */
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3,
+body.high-contrast h4,
+body.high-contrast h5 {
+  color: #ffd700 !important; /* żółty */
 }
 
-#aktualnosci_container {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  width: 1040px;
-  margin: 0 auto;
+/* Paragrafy */
+body.high-contrast p {
+  color: #fff !important; /* białe litery */
 }
 
-.akt {
-  flex: 1;
-  height: 337px;
-  background-color: white;
-  box-shadow: 0px 8px 24px -4px rgba(0, 0, 0, 0.2);
+/* Linki */
+body.high-contrast a {
+  color: #ffd700 !important; /* żółte */
 }
 
-#owcip {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 194px;
-}
-#owcip_logo1 img {
-  height: 114px;
-}
-#owcip_logo2 img {
-  height: 92px;
-}
-#owcip_logo1,
-#owcip_logo2 {
-  flex: 0 0 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Buttony */
+body.high-contrast button,
+body.high-contrast .button,
+body.high-contrast input[type="button"],
+body.high-contrast input[type="submit"] {
+  background-color: #000 !important;
+  color: #ffd700 !important;
+
+  cursor: pointer;
 }
 
-#owcip_text {
-  flex: 0 0 70%;
-  text-align: center;
-  line-height: 20px;
-  color: rgba(0, 0, 0, 0.4);
-  font-family: Merriweather Sans;
-  font-size: 13px;
+/* Hover efekt dla linków i przycisków */
+/* body.high-contrast a:hover, */
+body.high-contrast button:hover {
+  background-color: #ffd700 !important;
+  color: #000 !important;
+}
+/* Footer w trybie wysokiego kontrastu */
+body.high-contrast footer,
+body.high-contrast .footer {
+  background-color: #000 !important;
+  color: #fff !important;
 }
 
-#owcip_text p {
-  margin: 0;
+body.high-contrast footer a,
+body.high-contrast .footer a {
+  color: #ffd700 !important;
+}
+
+body.high-contrast footer a:hover,
+body.high-contrast .footer a:hover {
+  color: #000 !important;
+  background-color: #ffd700 !important;
+}
+/* 🔥 Tryb wysokiego kontrastu – przycisk WESPRZYJ */
+body.high-contrast #wesprzyjButton {
+  background-color: #ffd700 !important; /* żółte tło */
+  color: #000 !important; /* czarny tekst */
+  border: 1px solid #ffd700 !important;
+}
+
+body.high-contrast #wesprzyjButton:hover {
+  background-color: #000 !important; /* czarne tło po najechaniu */
+  color: #ffd700 !important; /* żółty tekst */
+  border: 1px solid #ffd700 !important;
+}
+/* 🔥 Tryb wysokiego kontrastu – przyciski social media */
+body.high-contrast .social-buttons a,
+body.high-contrast #social_buttons a {
+  background-color: #fff !important; /* białe tło */
+  color: #000 !important; /* czarna ikona / tekst */
+}
+
+body.high-contrast .social-buttons a:hover,
+body.high-contrast #social_buttons a:hover {
+  background-color: #ffd700 !important; /* żółte tło przy hover */
+  color: #000 !important; /* czarna ikona */
+}
+body.high-contrast #btn-contrast img,
+body.high-contrast #btn-zoom-in img {
+  filter: invert(80%) sepia(94%) saturate(7480%) hue-rotate(1deg)
+    brightness(90%) contrast(190%);
+}
+body.high-contrast #btn-contrast img:hover,
+body.high-contrast #btn-zoom-in img:hover {
+  background-color: #000;
+}
+
+@media (max-width: 768px) {
+  /* 🔥 Tryb wysokiego kontrastu */
+  body.high-contrast {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  /* Wszystkie kontenery */
+  body.high-contrast div {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  /* Nagłówki */
+  body.high-contrast h1,
+  body.high-contrast h2,
+  body.high-contrast h3,
+  body.high-contrast h4,
+  body.high-contrast h5 {
+    color: #ffd700 !important; /* żółty */
+  }
+
+  /* Paragrafy */
+  body.high-contrast p {
+    color: #fff !important; /* białe litery */
+  }
+
+  /* Linki */
+  body.high-contrast a {
+    color: #ffd700 !important; /* żółte */
+  }
+
+  /* Buttony */
+  body.high-contrast button,
+  body.high-contrast .button,
+  body.high-contrast input[type="button"],
+  body.high-contrast input[type="submit"] {
+    background-color: #000 !important;
+    color: #ffd700 !important;
+
+    cursor: pointer;
+  }
+
+  /* Hover efekt dla linków i przycisków */
+  /* body.high-contrast a:hover, */
+  body.high-contrast button:hover {
+    background-color: #ffd700 !important;
+    color: #000 !important;
+  }
+  /* Footer w trybie wysokiego kontrastu */
+  body.high-contrast footer,
+  body.high-contrast .footer {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  body.high-contrast footer a,
+  body.high-contrast .footer a {
+    color: #ffd700 !important;
+  }
+
+  body.high-contrast footer a:hover,
+  body.high-contrast .footer a:hover {
+    color: #000 !important;
+    background-color: #ffd700 !important;
+  }
+  /* 🔥 Tryb wysokiego kontrastu – przycisk WESPRZYJ */
+  body.high-contrast #wesprzyjButton {
+    background-color: #ffd700 !important; /* żółte tło */
+    color: #000 !important; /* czarny tekst */
+    border: 1px solid #ffd700 !important;
+  }
+
+  body.high-contrast #wesprzyjButton:hover {
+    background-color: #000 !important; /* czarne tło po najechaniu */
+    color: #ffd700 !important; /* żółty tekst */
+    border: 1px solid #ffd700 !important;
+  }
+  /* 🔥 Tryb wysokiego kontrastu – przyciski social media */
+  body.high-contrast .social-buttons a,
+  body.high-contrast #social_buttons a {
+    background-color: #fff !important; /* białe tło */
+    color: #000 !important; /* czarna ikona / tekst */
+  }
+
+  body.high-contrast .social-buttons a:hover,
+  body.high-contrast #social_buttons a:hover {
+    background-color: #ffd700 !important; /* żółte tło przy hover */
+    color: #000 !important; /* czarna ikona */
+  }
+  body.high-contrast #btn-contrast img,
+  body.high-contrast #btn-zoom-in img {
+    filter: invert(80%) sepia(94%) saturate(7480%) hue-rotate(1deg)
+      brightness(90%) contrast(190%);
+  }
+  body.high-contrast #btn-contrast img:hover,
+  body.high-contrast #btn-zoom-in img:hover {
+    background-color: #000;
+  }
+  body.high-contrast span {
+    background-color: #ffd700 !important; /* żółte tło przy hover */
+  }
 }

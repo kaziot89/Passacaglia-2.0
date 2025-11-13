@@ -53,6 +53,7 @@ body {
 .projekt-description p {
   margin: 0 0 1em 0;
   line-height: 1.6;
+  font-size: 16px;
 }
 
 .projekt-info {

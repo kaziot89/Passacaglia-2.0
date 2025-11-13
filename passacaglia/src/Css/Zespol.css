@@ -68,6 +68,13 @@
   .picture {
     margin: 0 auto 48px;
   }
+  #zespol_container {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .person_text {
+    min-width: 100%;
+  }
 }
 @media (max-width: 768px) {
   #zespol_page {

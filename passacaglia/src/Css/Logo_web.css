@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  z-index: 10;
+  z-index: 999999;
   cursor: pointer;
 }
 

@@ -2,14 +2,15 @@
 
 .footer {
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   min-width: 1024px;
   margin: 0 auto;
   background-color: #4a727b;
   padding: 38px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
   color: white;
   flex-wrap: wrap;
   font-family: "Merriweather Sans", sans-serif;

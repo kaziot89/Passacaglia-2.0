@@ -7,9 +7,10 @@
   font-weight: bold;
   cursor: pointer;
   display: block;
-  /* margin: 48px auto 0; */
+  margin: 48px auto 0;
   transition: color 0.1s ease, border-color 0.1s ease;
   background: transparent;
+  margin: 0 auto;
 }
 
 .more-button:hover {

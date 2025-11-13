@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  max-width: 1440px;
+  min-width: 100vw;
   margin: auto;
 }
 
@@ -34,8 +34,8 @@ a {
 .banner-container {
   position: relative;
   width: 100%;
-  max-width: 1440px;
-  aspect-ratio: 1440 / 750;
+  /* max-width: 1440px; */
+  aspect-ratio: 1440 / 600;
   margin: 0 auto;
   overflow: hidden;
   z-index: 0;
@@ -64,10 +64,10 @@ a {
   align-items: center;
   /* justify-content: center; */
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   min-width: 1024px;
   margin: 0 auto;
-  padding-top: clamp(32px, 6vw, 96px);
+  /* padding-top: clamp(32px, 6vw, 96px); */
   padding-bottom: 64px;
   z-index: 1;
   background-color: white;
@@ -105,9 +105,12 @@ a {
   color: black;
   font-family: "Merriweather Sans", sans-serif;
   line-height: 28px;
+  margin-bottom: 48px;
   /* text-align: justify; */
 }
-
+#misja_text p {
+  font-size: 16px;
+}
 /* ===============================
    SEKCJA AKTUALNOŚCI
 ================================= */
@@ -118,7 +121,7 @@ a {
   justify-content: center;
   width: 90%;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
   align-items: center;
 }
 
@@ -161,7 +164,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  margin: 0 auto;
+  width: 960px;
   height: 194px;
   background-color: white;
 }
@@ -192,6 +196,7 @@ a {
 }
 
 #owcip_text p {
+  font-size: 13px;
   margin: 0;
 }
 
@@ -267,6 +272,8 @@ a {
     flex-wrap: wrap;
     padding: 32px 0;
     height: auto;
+    width: 100%;
+    /* margin: 0%; */
     justify-content: space-around;
   }
   #owcip_text {

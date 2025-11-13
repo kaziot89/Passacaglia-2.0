@@ -1,6 +1,6 @@
 #menuContainer {
   min-width: 1000px;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   height: 80px;
   margin: auto;
   display: flex;
@@ -86,6 +86,20 @@
 
 #wesprzyjButton:hover {
   cursor: pointer;
+}
+#btn-contrast,
+#btn-zoom-in {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: normal; /* tylko dla kontrastu, ale nie szkodzi dla drugiego */
+  padding: 0; /* opcjonalnie, żeby usunąć domyślne paddingi */
+}
+
+#btn-contrast img,
+#btn-zoom-in img {
+  width: 16px;
+  height: 16px;
 }
 
 @media (max-width: 1024px) {
