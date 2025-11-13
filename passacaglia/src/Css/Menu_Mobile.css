@@ -1,7 +1,7 @@
 .menu_mobile {
   display: none;
   position: relative;
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 #icons {
   display: flex;

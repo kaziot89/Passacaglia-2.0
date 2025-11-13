@@ -96,7 +96,11 @@ body.high-contrast #btn-contrast img:hover,
 body.high-contrast #btn-zoom-in img:hover {
   background-color: #000;
 }
-
+@media (max-width: 1024px) {
+  body.high-contrast span {
+    background-color: #ffd700 !important; /* żółte tło przy hover */
+  }
+}
 @media (max-width: 768px) {
   /* 🔥 Tryb wysokiego kontrastu */
   body.high-contrast {
