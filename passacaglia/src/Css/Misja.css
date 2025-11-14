@@ -27,11 +27,14 @@ body {
 }
 #misja_page h3 {
   position: relative; /* potrzebne dla absolutnego pseudo-elementu */
-  margin: 32px 0 16px;
+  margin: 32px 28px 16px;
   font-family: Merriweather Sans;
   letter-spacing: 1px;
   font-size: 16px;
   line-height: 25px;
+}
+#cele_container p {
+  margin-left: 28px;
 }
 
 #misja_page h3::before {
@@ -101,11 +104,12 @@ body {
     max-width: 100%;
     margin: 0 24px;
   }
-  #cele_container {
+
+  /* #cele_container {
     margin-left: 24px;
-  }
+  } */
   #misja_container {
-    max-width: 90%;
+    /* max-width: 90%; */
   }
   .button_container {
     flex-direction: column;

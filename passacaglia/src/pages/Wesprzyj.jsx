@@ -86,7 +86,13 @@ const Wesprzyj = () => {
                 alt="Patronite Logo"
                 style={{ width: "40px", height: "40px" }}
               />
-              <a href="https://www.patronite.pl/passacaglia">Zobacz profil</a>
+              <a
+                href="https://www.patronite.pl/passacaglia"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Zobacz profil
+              </a>
             </div>
           </div>
           <div id="tax_container">
@@ -100,7 +106,7 @@ const Wesprzyj = () => {
               <p style={{ display: "inline", fontWeight: "300" }}>
                 Cel szczegółowy:
               </p>
-              <p style={{ display: "inline" }}>PASSACAGLIA 23441</p>
+              <p style={{ display: "inline" }}> PASSACAGLIA 23441</p>
 
               <p style={{ marginTop: "8px" }}>
                 Numer konta: 35 2030 0045 1110 0000 0382 5640
@@ -112,7 +118,11 @@ const Wesprzyj = () => {
                   style={{ width: "48px", height: "24px" }}
                 />
 
-                <a href="https://fsmm.pl/partner/fundacja-promocji-muzyki-dawnej-passacaglia/">
+                <a
+                  href="https://fsmm.pl/partner/fundacja-promocji-muzyki-dawnej-passacaglia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Zobacz profil
                 </a>
               </div>

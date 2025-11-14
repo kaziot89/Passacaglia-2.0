@@ -83,6 +83,8 @@ const Projekty = () => {
                   <Link
                     to={`/projekty/${projekt.slug}`}
                     className="projekty_text_link projekty_text"
+                    /* tutaj dodajemy pre-line tylko dla tekstu */
+                    style={{ whiteSpace: "pre-line" }}
                   >
                     <h5>
                       <i>{projekt.shortTitle || projekt.title}</i>

@@ -25,7 +25,7 @@ const Zespol = () => {
               style={{ backgroundImage: `url(${joannaImg})` }}
             ></div>
             <div className="person_text">
-              <h2>Joanna Owczarek - Ciszewska</h2>
+              <h2>Joanna Owczarek-Ciszewska</h2>
               <h4>PREZES ZARZĄDU</h4>
               <p>
                 Absolwentka Akademii Muzycznej w Krakowie (fortepian),
