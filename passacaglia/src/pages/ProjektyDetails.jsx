@@ -45,6 +45,7 @@ const ProjektyDetails = () => {
       <Banner_podstrona image={bannerImage} objectPosition="center 21%" />
       <div className="projekt-details-page">
         <div className="projekt-title">{projekt.title}</div>
+
         <div className="projekt-details">
           <img
             src={projekt.image}

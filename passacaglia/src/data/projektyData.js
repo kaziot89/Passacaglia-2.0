@@ -47,7 +47,7 @@ export const projektyData = [
   {
     id: 1,
     slug: "jesien-z-muzyka-dawna-2",
-    title: "Jesień z muzyką dawną — II edycja",
+    title: "Jesień z muzyką dawną\n  II edycja",
     category: "aktualne",
     miniature: paintingsGallery[2],
 
@@ -111,7 +111,7 @@ Partnerzy: Dam Artysty w Głuchołazach, Fundacja Benevolens, Parafia św. Bart�
   {
     id: 3,
     slug: "jesien-z-muzyka-dawna-1",
-    title: "Jesień z muzyką dawną — I edycja",
+    title: "Jesień z muzyką dawną\n I edycja",
     category: "archiwalne",
     miniature: paintingsGallery[0],
 

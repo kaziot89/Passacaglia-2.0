@@ -85,10 +85,11 @@ const Menu_Web = () => {
             style={{
               position: "absolute",
               top: "100%",
+              left: "0",
               color: "white",
               backgroundColor: "#4A727B",
               boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
-              margin: "32px 0 0 0",
+              margin: "27px -27px 0px",
               width: "160px",
               padding: "8px 0",
               zIndex: "10",

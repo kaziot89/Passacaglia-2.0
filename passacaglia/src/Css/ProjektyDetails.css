@@ -84,8 +84,12 @@ body {
 .projekty_back_link {
   display: block;
   margin-top: 20px;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Merriweather Sans;
   text-decoration: none;
-  color: #555;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
 }
 
 .projekty_back_link:hover {
