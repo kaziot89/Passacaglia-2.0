@@ -103,9 +103,27 @@ const Menu_Web = () => {
       </div>
 
       {/* --- Reszta linków --- */}
-      <NavLink to="/projekty">PROJEKTY</NavLink>
-      <NavLink to="/aktualnosci">AKTUALNOŚCI</NavLink>
-      <NavLink to="/kontakt">KONTAKT</NavLink>
+      <NavLink
+        to="/projekty"
+        className={({ isActive }) => (isActive ? "activeLink" : "")}
+      >
+        PROJEKTY
+      </NavLink>
+
+      <NavLink
+        to="/aktualnosci"
+        className={({ isActive }) => (isActive ? "activeLink" : "")}
+      >
+        AKTUALNOŚCI
+      </NavLink>
+
+      <NavLink
+        to="/kontakt"
+        className={({ isActive }) => (isActive ? "activeLink" : "")}
+      >
+        KONTAKT
+      </NavLink>
+
       <NavLink id="wesprzyjButton" to="/wesprzyj">
         WESPRZYJ
       </NavLink>

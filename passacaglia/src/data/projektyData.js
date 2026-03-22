@@ -12,12 +12,20 @@ for (const path in Jesien2Images) {
     Jesien2Gallery[city].push(Jesien2Images[path].default);
   }
 }
+const SpotkanieNoworoczneImages = import.meta.glob(
+  "../Pictures/SpotkanieNoworoczne/*",
+  { eager: true },
+);
+
+const SpotkanieNoworoczneGallery = Object.values(SpotkanieNoworoczneImages).map(
+  (img) => img.default,
+);
 
 const PrzestrzenImages = import.meta.glob("../Pictures/Przestrzen/*", {
   eager: true,
 });
 const PrzestrzenGallery = Object.values(PrzestrzenImages).map(
-  (img) => img.default
+  (img) => img.default,
 );
 const AdventImages = import.meta.glob("../Pictures/AdventConcert/*", {
   eager: true,
@@ -40,15 +48,36 @@ const paintingsImages = import.meta.glob("../Pictures/Projekty_Paintings/*", {
   eager: true,
 });
 const paintingsGallery = Object.values(paintingsImages).map(
-  (img) => img.default
+  (img) => img.default,
 );
 
 export const projektyData = [
   {
     id: 1,
+    slug: "spotkanie-noworoczne",
+    title: "Spotkanie noworoczne Środowisk Twórczych",
+    category: "aktualne",
+    miniature: paintingsGallery[2],
+
+    image: Object.values(SpotkanieNoworoczneGallery)[0],
+    description: `
+     Na początku tego roku, 8.01.2026, w Muzeum Diecezjalnym w Opolu odbyło się spotkanie noworoczne środowisk twórczych. To wyjątkowe wydarzenie, skierowane do artystów plastyków, architektów, aktorów, muzyków, dziennikarzy, muzealników i animatorów kultury miasta Opola, odbywa się co roku. Jest to czas integracji, spotkań, podsumowań i wymiany doświadczeń twórców z różnych dziedzin sztuki. Nasza fundacja z radością przyjęła zaproszenie dyrektora muzeum, ks. Wojciecha Lippa, do zaopiekowania się stroną muzyczną tego spotkania. Wspólnie zaprosiliśmy przybyłych gości na koncert p.t. „Muzyka baroku na Boże Narodzenie” na instrumentach dawnych. Wystąpili: 
+Monika Švandová – sopran
+Monika Targowska – flet traverso
+Maria Misiarz – wiolonczela barokowa
+Antoni Popowicz – obój barokowy
+Joanna Owczarek- Ciszewska – klawesyn
+W programie koncertu znalazły się utwory związane z okresem Bożego Narodzenia – kompozycje instrumentalne oraz arie m.in. M.-R. Delalande'a, A. Corellego i J. S. Bacha. Po koncercie odbył się wykład historyka sztuki ks. dr Leszka Makówki: „O kiczu nie tylko religijnym”, a po nim nieformalne rozmowy i życzenia noworoczne.
+Serdecznie dziękujemy za obecność wszystkim twórcom, a Muzeum Diecezjalnemu za zaproszenie i możliwość współtworzenia tego wyjątkowego spotkania.
+    `,
+    link: "https://example.com",
+    gallery: SpotkanieNoworoczneGallery.slice(1),
+  },
+  {
+    id: 1,
     slug: "jesien-z-muzyka-dawna-2",
     title: "Jesień z muzyką dawną\n  II edycja",
-    category: "aktualne",
+    category: "archiwalne",
     miniature: paintingsGallery[2],
 
     image: Object.values(Jesien2Gallery)[0][0],

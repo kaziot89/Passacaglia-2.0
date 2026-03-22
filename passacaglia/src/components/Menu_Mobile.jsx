@@ -9,7 +9,7 @@ export default function Menu_Mobile() {
   const [open, setOpen] = useState(false);
   const [highContrast, setHighContrast] = useState(false);
   const [largeFont, setLargeFont] = useState(false); // stan powiększonej czcionki
-
+  const navClass = ({ isActive }) => (isActive ? "activeLink" : "");
   // 🔹 Wczytaj ustawienia z localStorage przy starcie
   useEffect(() => {
     const savedContrast = localStorage.getItem("highContrast");
@@ -105,24 +105,54 @@ export default function Menu_Mobile() {
         <NavLink to="/" onClick={(e) => e.preventDefault()}>
           O FUNDACJI
         </NavLink>
-        <NavLink to="/misja" onClick={() => setOpen(false)}>
+        <NavLink
+          to="/misja"
+          className={navClass}
+          onClick={() => setOpen(false)}
+        >
           NASZA MISJA
         </NavLink>
-        <NavLink to="/zespol" onClick={() => setOpen(false)}>
+
+        <NavLink
+          to="/zespol"
+          className={navClass}
+          onClick={() => setOpen(false)}
+        >
           ZESPÓŁ
         </NavLink>
-        <NavLink to="/media" onClick={() => setOpen(false)}>
+
+        <NavLink
+          to="/media"
+          className={navClass}
+          onClick={() => setOpen(false)}
+        >
           MEDIA O NAS
         </NavLink>
-        <NavLink to="/projekty" onClick={() => setOpen(false)}>
+
+        <NavLink
+          to="/projekty"
+          className={navClass}
+          onClick={() => setOpen(false)}
+        >
           PROJEKTY
         </NavLink>
-        <NavLink to="/aktualnosci" onClick={() => setOpen(false)}>
+
+        <NavLink
+          to="/aktualnosci"
+          className={navClass}
+          onClick={() => setOpen(false)}
+        >
           AKTUALNOŚCI
         </NavLink>
-        <NavLink to="/kontakt" onClick={() => setOpen(false)}>
+
+        <NavLink
+          to="/kontakt"
+          className={navClass}
+          onClick={() => setOpen(false)}
+        >
           KONTAKT
         </NavLink>
+
         <NavLink id="wesprzyjButton" to="/wesprzyj">
           WESPRZYJ
         </NavLink>

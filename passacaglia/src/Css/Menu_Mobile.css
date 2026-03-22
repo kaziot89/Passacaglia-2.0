@@ -13,6 +13,22 @@
   min-height: 20px;
   min-width: 20px;
 } */
+.mobileLinks .activeLink {
+  font-weight: bold;
+}
+
+.mobileLinks .activeLink::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background-color: #bc7f79;
+  border-radius: 1px;
+}
+
 @media (max-width: 1024px) {
   .menu_mobile {
     display: flex;
